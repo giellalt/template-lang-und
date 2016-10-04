@@ -1,4 +1,7 @@
 $Rev$
+Changed variable name in devtool scripts, to reflect similar changes elsewhere.
+
+r139846:
 Corrected a number of bugs and deficiencies when building spellers when the
 giella proofing tools libraries must be fetched over the net. Not the spellers
 build correctly under all intended circumstances given that there is a network
