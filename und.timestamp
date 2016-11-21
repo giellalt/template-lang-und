@@ -1,4 +1,9 @@
 $Rev$
+Removed repetition of the frequency weighted fst. The goal was to promote
+compounds where each part was already seen in the corpus, but it made the
+speller bigger and slower, and actually decreased suggestion quality slightly.
+
+r143822:
 Added info about which file to look in to find a suitable frequency corpus
 cut-off location (=line number).
 
