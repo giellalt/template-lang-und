@@ -99,13 +99,13 @@ AM_CONDITIONAL([HAVE_ALT_ORTHS], [test "x$ALT_ORTHS" != "x" \
 AC_SUBST([DIALECTS], [""])
 AM_CONDITIONAL([HAVE_DIALECTS], [test "x$DIALECTS" != "x"])
 
-# GTLANG is the language code used to identify this project; it should be the
-# same as the directory name in $GIELLA_HOME/*langs/ and the same as the ISO 639
-# three-letter code for the language:
+# GTLANG is the language code used to identify this project; it should be same
+# as the directory name in gtsvn and same as ISO 639 three-letter code for the
+# language if possible
 AC_SUBST([GTLANG], [__UND__])
 # GTLANG2 is the shortest unambiguous language code for this project; it
-# should be the ISO 639-1 two-letter code if available, otherwise usually the
-# same as above:
+# should be the ISO 639-1 two-letter code if possible, otherwise usually same
+# as above
 AC_SUBST([GTLANG2], [__UND2C__])
 # GTLANGUAGE is the full language name as given by the ISO 639-3 file
 AC_SUBST([GTLANGUAGE], ["__UNDEFINED__"])
