@@ -5,7 +5,7 @@ AC_DEFUN([gt_CONFIG_FILES],
 [
 # List all non-script files processed by Autoconf.
 AC_CONFIG_FILES([Makefile \
-                 giella-__UND__.pc \
+                 giella-sme.pc \
                  src/Makefile \
                  src/filters/Makefile \
                  src/hyphenation/Makefile \
@@ -19,6 +19,9 @@ AC_CONFIG_FILES([Makefile \
                  doc/Makefile \
                  test/Makefile \
                  test/tools/Makefile \
+                 test/tools/hyphenators/Makefile \
+                 test/tools/hyphenators/fstbased/Makefile \
+                 test/tools/hyphenators/patternbased/Makefile \
                  test/tools/mt/Makefile \
                  test/tools/mt/apertium/Makefile \
                  test/tools/spellcheckers/Makefile \
@@ -91,8 +94,8 @@ AC_CONFIG_FILES([test/src/morphology/generate-verb-lemmas.sh], \
 AC_CONFIG_FILES([test/tools/spellcheckers/fstbased/desktop/hfst/accept-all-lemmas.sh], \
       [chmod a+x test/tools/spellcheckers/fstbased/desktop/hfst/accept-all-lemmas.sh])
 # Shorthand shell scripts instead of the old-type aliases - all languages:
-AC_CONFIG_FILES([tools/shellscripts/u__UND__-gt.sh], \
-      [chmod a+x tools/shellscripts/u__UND__-gt.sh])
+AC_CONFIG_FILES([tools/shellscripts/usme-gt.sh], \
+      [chmod a+x tools/shellscripts/usme-gt.sh])
 # Devtools shell scripts should also be handled by autotools:
 AC_CONFIG_FILES([devtools/check_analysis_regressions.sh], \
       [chmod a+x devtools/check_analysis_regressions.sh])
