@@ -1,4 +1,7 @@
 $Rev$
+Fixed copy-paste error.
+
+r177012:
 Added support for building an analyser tool. This is in practice an
 xml-specified pipeline identical to what is used in the grammar checker, but
 where the pipeline does text analysis instead of grammar checking. Also made
