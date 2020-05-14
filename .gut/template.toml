@@ -131,3 +131,5 @@ optional = ["tools/mt/apertium/tagsets/README.txt",
             "devtools/00README.txt",
             "src/fst/generated_files/00README.txt",
             "src/fst/incoming/00README.txt"]
+
+ignored = []
