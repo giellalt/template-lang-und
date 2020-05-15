@@ -7,6 +7,7 @@ name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__"]
 rev_id = 1
 required = ["configure.ac",
+            ".gitignore",
             "am-shared/00-DO-NOT-EDIT-THIS-DIRECTORY-readme.txt",
             "am-shared/doc-dir-include.am",
             "am-shared/hfst-format-include.am",
