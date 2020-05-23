@@ -5,7 +5,7 @@
 # - optional: a full list of all files merged when the --optional flag is used with `gut template`
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__"]
-rev_id = 7
+rev_id = 8
 required = ["configure.ac",
             ".gitignore",
             "tools/shellscripts/u__UND__-gt.sh.in",
@@ -106,6 +106,7 @@ required = ["configure.ac",
             "doc/Makefile.am",
             "autogen.sh",
             "src/filters/Makefile.am",
+            "src/filters/.gitignore",
             "src/cg3/Makefile.am",
             "src/orthography/Makefile.am",
             "src/hyphenation/Makefile.am",
@@ -114,6 +115,7 @@ required = ["configure.ac",
             "src/phonetics/Makefile.am",
             "src/tagsets/Makefile.am",
             "src/fst/Makefile.am",
+            "src/fst/.gitignore",
             "src/fst/Makefile.modifications-phon.am"]
 
 optional = ["tools/mt/apertium/tagsets/README.txt",
