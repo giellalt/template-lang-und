@@ -431,7 +431,7 @@ AC_DEFUN([gt_PROG_XFST],
             [AS_HELP_STRING([--with-xfst=DIRECTORY],
                             [search xfst in DIRECTORY @<:@default=PATH@:>@])],
             [with_xfst=$withval],
-            [with_xfst=yes])
+            [with_xfst=no])
 AC_PATH_PROG([PRINTF], [printf], [echo -n])
 AC_PATH_PROG([XFST], [xfst], [false], [$PATH$PATH_SEPARATOR$with_xfst])
 AC_PATH_PROG([TWOLC], [twolc], [false], [$PATH$PATH_SEPARATOR$with_xfst])
