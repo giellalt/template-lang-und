@@ -4,8 +4,8 @@
 # - required: a full list of all files always merged
 # - optional: a full list of all files merged when the --optional flag is used with `gut template`
 name = "Language Template"
-patterns = ["__UND__", "__UND2C__", "__UNDEFINED__"]
-rev_id = 26
+patterns = ["__UND__", "__UND2C__", "__UNDEFINED__", "__LICENCE__"]
+rev_id = 27
 required = ["configure.ac",
             ".gitignore",
             "tools/shellscripts/u__UND__-gt.sh.in",
