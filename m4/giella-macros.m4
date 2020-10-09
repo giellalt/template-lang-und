@@ -945,7 +945,7 @@ AM_CONDITIONAL([WANT_MORPHER], [test "x$enable_morpher" != xno])
 # Enable dialect-specific analysers and tools, such as spellers:
 AC_ARG_ENABLE([dialects],
               [AS_HELP_STRING([--enable-dialects],
-                              [build dialect specific fst's and spellers @<:@default=no@:>@])],
+                              [build dialect specific fst’s and spellers @<:@default=no@:>@])],
               [enable_dialects=$enableval],
               [enable_dialects=no])
 AS_IF([test "x$enable_dialects" = "xyes" -a "x$DIALECTS" = "x"],
@@ -953,7 +953,7 @@ AS_IF([test "x$enable_dialects" = "xyes" -a "x$DIALECTS" = "x"],
        AC_MSG_ERROR([You have not defined any dialects. Please see the documentation.])])
 AM_CONDITIONAL([WANT_DIALECTS], [test "x$enable_dialects" != xno])
 
-]) # ' # gt_ENABLE_TARGETS
+]) # gt_ENABLE_TARGETS
 
 ################################################################################
 # Define function to print the configure footer
@@ -962,19 +962,19 @@ AC_DEFUN([gt_PRINT_FOOTER],
 [
 cat<<EOF
 
-  -- specialised fst's (off by default): --
-  * dictionary fst's enabled: $enable_dicts
+  -- specialised fst’s (off by default): --
+  * dictionary fst’s enabled: $enable_dicts
   * Oahpa transducers enabled: $enable_oahpa
     * L2 analyser: $enable_L2
     * downcase error analyser: $enable_downcaseerror
   * generate abbr.txt: $enable_abbr
-  * build glossing fst's: $enable_glossers
-  * build dialect specific fst's: $enable_dialects
+  * build glossing fst’s: $enable_glossers
+  * build dialect specific fst’s: $enable_dialects
 
   -- Tools (off by default): --
   * phonetic/IPA conversion enabled: $enable_phonetic
   * CG-based MT enabled: $enable_cgmt
-  * Apertium MT fst's enabled: $enable_apertium
+  * Apertium MT fst’s enabled: $enable_apertium
   * build tokenisers: $enable_tokenisers
   * build morphololgical segmenter: $enable_morpher
   * build analyser tool: $enable_analyser_tool
