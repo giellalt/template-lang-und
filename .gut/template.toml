@@ -5,7 +5,7 @@
 # - optional: a full list of all files merged when the --optional flag is used with `gut template`
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__", "__LICENCE__"]
-rev_id = 38
+rev_id = 39
 required = ["configure.ac",
             ".gitignore",
             "tools/shellscripts/u__UND__-gt.sh.in",
@@ -40,6 +40,7 @@ required = ["configure.ac",
             "tools/analysers/Makefile.am",
             "tools/grammarcheckers/filters/Makefile.am",
             "tools/grammarcheckers/Makefile.am",
+            "tools/grammarcheckers/tests/Makefile.am",
             "test/tools/mt/Makefile.am",
             "test/tools/mt/apertium/Makefile.am",
             "test/tools/mt/apertium/run-mt-gt-desc-anayaml-testcases.sh",
