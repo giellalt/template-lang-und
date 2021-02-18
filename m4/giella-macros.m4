@@ -127,7 +127,7 @@ AC_PATH_PROG([GIELLA_CORE_VERSION], [gt-version.sh], [no],
     [$GTCORE/scripts$PATH_SEPARATOR$GTHOME/giella-core/scripts$PATH_SEPARATOR$PATH])
 AC_MSG_CHECKING([the version of the Giella Core])
 AS_IF([test "x${GIELLA_CORE_VERSION}" != xno],
-        [_giella_core_version=$( ${GIELLA_CORE_VERSION} )],
+        [_giella_core_version=$( "${GIELLA_CORE_VERSION}" )],
         [AC_MSG_ERROR([gt-version.sh could not be found, installation is incomplete!])
     ])
 AC_MSG_RESULT([$_giella_core_version])
