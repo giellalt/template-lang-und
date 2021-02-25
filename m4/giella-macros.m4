@@ -156,15 +156,15 @@ AC_ARG_WITH([giella-shared],
 AC_MSG_CHECKING([whether we can set GIELLA_SHARED])
 # --with-giella-shared overrides everything:
 AS_IF([test "x$with_giella_shared" != "xfalse" -a \
-    -d $with_giella_shared/all_langs ], [
-    GIELLA_SHARED=$with_giella_shared
+    -d "$with_giella_shared"/all_langs ], [
+    GIELLA_SHARED="$with_giella_shared"
     ], [
     # Check in the parent directory:
-    AS_IF([test -d $THIS_TOP_SRC_DIR/../giella-shared/all_langs ], [
-        GIELLA_SHARED=$THIS_TOP_SRC_DIR/../giella-shared
+    AS_IF([test -d "$THIS_TOP_SRC_DIR"/../giella-shared/all_langs ], [
+        GIELLA_SHARED="$THIS_TOP_SRC_DIR"/../giella-shared
     ], [
         AS_IF([pkg-config --exists giella-common], [
-            GIELLA_SHARED=$(pkg-config --variable=dir giella-common)
+            GIELLA_SHARED="$(pkg-config --variable=dir giella-common)"
         ],
         [
      AC_MSG_ERROR([Could not find giella-common data dir to set GIELLA_SHARED])
@@ -197,7 +197,7 @@ make
 
 # Identify the version of giella-shared:
 AC_MSG_CHECKING([the version of Giella Shared])
-_giella_shared_version=$( pkg-config --modversion $GIELLA_SHARED/giella-common.pc )
+_giella_shared_version=$( pkg-config --modversion --with-path="$GIELLA_SHARED" giella-common )
 
 # Check whether a version info string was found:
 case "$_giella_shared_version" in    # branch to the first pattern
