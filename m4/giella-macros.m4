@@ -1004,6 +1004,16 @@ AC_ARG_ENABLE([custom-fsts],
               [enable_custom_fsts=$DEFAULT_CUSTOM_FSTS])
 AM_CONDITIONAL([WANT_CUSTOM_FSTS], [test "x$enable_custom_fsts" != xno])
 
+# Enable TTS transcriptors - default is 'no' (via $enable_all_tools)
+AC_ARG_ENABLE([tts],
+              [AS_HELP_STRING([--enable-tts],
+                              [enable tts transcriptors @<:@default=no@:>@])],
+              [enable_tts=$enableval],
+              [enable_tts=$enable_all_tools])
+AM_CONDITIONAL([WANT_TTS], [test "x$enable_tts" != xno])
+enableval=''
+
+
 ]) # gt_ENABLE_TARGETS
 
 ################################################################################
