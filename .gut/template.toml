@@ -5,7 +5,7 @@
 # - optional: a full list of all files merged when the --optional flag is used with `gut template`
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__", "__LICENCE__"]
-rev_id = 47
+rev_id = 48
 required = ["configure.ac",
             ".gitignore",
             "tools/shellscripts/u__UND__-gt.sh.in",
@@ -179,16 +179,9 @@ ignored = [ "manifest.toml",
             "test/src/orthography/initcaptests_inituppercase.gen.yaml",
             "test/src/dict-gt-yamls/dicttests_dict-gt-desc.ana.yaml",
             "test/src/dict-gt-yamls/dicttests_dict-gt-norm.gen.yaml",
-            "docs/tabs.xml",
-            "docs/forrest.properties",
-            "docs/index.xml",
-            "docs/preamble.jspwiki",
             "docs/resources/images/group.png",
             "docs/resources/images/project.png",
             "docs/link-header.jspwiki",
-            "docs/skinconf.xml",
-            "docs/sitemap.xmap",
-            "docs/site.xml",
             "src/filters/downcase_UCletters.regex",
             "src/cg3/dependency.cg3",
             "src/cg3/functions.cg3",
