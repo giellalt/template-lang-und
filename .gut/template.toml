@@ -5,7 +5,7 @@
 # - optional: a full list of all files merged when the --optional flag is used with `gut template`
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__", "__LICENCE__"]
-rev_id = 50
+rev_id = 51
 required = ["configure.ac",
             ".gitignore",
             "tools/shellscripts/u__UND__-gt.sh.in",
@@ -137,6 +137,7 @@ optional = ["tools/mt/apertium/tagsets/README.txt",
             "manifest.toml.in",
             "devtools/00README.txt",
             "docs/link-header.md",
+            "docs/index-header.md",
             "src/fst/generated_files/00README.txt",
             "src/fst/incoming/00README.txt"]
 
