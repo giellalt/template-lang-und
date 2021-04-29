@@ -87,6 +87,9 @@
 /tools/spellcheckers/filters/split-CmpNP-tags.regex
 /tools/spellcheckers/*spellercorpus.*.txt
 /tools/spellcheckers/weights/*.clean.txt
+/docs/root-morphology.md
+/docs/*-affixes.md
+/docs/*-stems.md
 Makefile
 Makefile.in
 build
