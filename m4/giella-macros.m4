@@ -314,6 +314,14 @@ AC_CACHE_CHECK([for awk that supports gensub], [ac_cv_path_GAWK],
       && ac_cv_path_GAWK=$ac_path_GAWK ac_path_GAWK_found=:]],
     [AC_MSG_ERROR([could not find awk that supports gensub - please install GNU awk])])])
 AC_SUBST([GAWK], [$ac_cv_path_GAWK])
+# Check for sed with required feature:
+AC_CACHE_CHECK([for sed that supports newlines and pipes], [ac_cv_path_SED],
+  [AC_PATH_PROGS_FEATURE_CHECK([SED], [sed gsed gnused],
+              [[m4out=`echo aaa | $ac_path_SED 's/a/\n/g' | wc -l | tr -d '[:space:] '`
+                test "x$m4out" = x4\
+      && ac_cv_path_SED=$ac_path_SED ac_path_SED_found=:]],
+    [AC_MSG_ERROR([could not find sed that supports stuff - please install GNU sed])])])
+AC_SUBST([SED], [$ac_cv_path_SED])
 
 # Check for Forrest:
 AC_ARG_WITH([forrest],
