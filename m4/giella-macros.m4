@@ -1080,7 +1080,7 @@ cat<<EOF
   * transcriptors enabled: $enable_transcriptors
   * syntactic tools enabled: $enable_syntax
   * yaml tests enabled: $enable_yamltests
-  * generated documentation enabled: $giellalt_forrest_validation
+  * generated documentation enabled: yes
 
 For more ./configure options, run ./configure --help
 
@@ -1095,9 +1095,6 @@ AS_IF([test x$gt_prog_xslt = xno -a \
 disabled. Please check the output of configure to locate any problems. The LexC
 files will still compile though.
 ])])
-
-AS_IF([test "x$giellalt_forrest_validation" = "xno" -a "x$with_forrest" = "xyes"],
-      [AC_MSG_WARN([Could not find gawk, java or forrest. In-source documentation will not be extracted and validated. Please install the required tools. Alternatively, silence this message by disabling forrest validation: --without-forrest])])
 
 AS_IF([test x$can_local_sync = xno -a x$can_wget_giella_libs = xno],
       [AC_MSG_WARN([Could not find GIELLA_LIBS, rsync or wget - speller installers will not be built, only zhfst files.])])
