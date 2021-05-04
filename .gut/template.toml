@@ -5,7 +5,7 @@
 # - optional: a full list of all files merged when the --optional flag is used with `gut template`
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__", "__LICENCE__", "__LICENSE__"]
-rev_id = 61
+rev_id = 62
 required = [".gitignore",
             ".github/workflows/docsygen.yml",
             "Makefile.am",

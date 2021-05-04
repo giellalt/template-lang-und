@@ -90,6 +90,16 @@
 /docs/root-morphology.md
 /docs/*-affixes.md
 /docs/*-stems.md
+/docs/index.md
+/docs/*-generated.md
+/docs/*-morphology.md
+/docs/*-syntax.md
+/docs/generated-markdowns.*
+/docs/Links.md
+/docs/transcriptor-*.md
+/docs/*-src.md
+/docs/*-tools.md
+/docs/???.md
 Makefile
 Makefile.in
 build
