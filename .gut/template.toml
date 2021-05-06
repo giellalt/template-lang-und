@@ -5,7 +5,7 @@
 # - optional: a full list of all files merged when the --optional flag is used with `gut template`
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__", "__LICENCE__", "__LICENSE__"]
-rev_id = 62
+rev_id = 63
 required = [".gitignore",
             ".github/workflows/docsygen.yml",
             "Makefile.am",
@@ -122,7 +122,8 @@ required = [".gitignore",
             "tools/spellcheckers/filters/Makefile.mod-mobile-filters.am",
             "tools/spellcheckers/weights/Makefile.am",
             "tools/tokenisers/Makefile.am",
-            "tools/tokenisers/filters/Makefile.am"]
+            "tools/tokenisers/filters/Makefile.am",
+            "tools/tts/Makefile.am"]
 
 optional = ["AUTHORS",
             "INSTALL",
@@ -143,7 +144,8 @@ optional = ["AUTHORS",
             "tools/spellcheckers/index.xml",
             "tools/spellcheckers/weights/00README.txt",
             "tools/tokenisers/tokeniser-disamb-gt-desc.pmscript",
-            "tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript"]
+            "tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript",
+            "tools/tts/pipespec.xml.in"]
 
 ignored = [ "manifest.toml",
             "misc/00Readme.txt",
@@ -214,4 +216,5 @@ ignored = [ "manifest.toml",
             "tools/spellcheckers/words.default.txt",
             "tools/tokenisers/corpustags.txt",
             "tools/tokenisers/mwe-dis.cg3",
-            "tools/tokenisers/paradigm.abbr.txt"]
+            "tools/tokenisers/paradigm.abbr.txt",
+            "tools/tts/analyser-gt-whitespace.regex"]
