@@ -1,15 +1,15 @@
 The __UNDEFINED__ morphology and tools
 ==========================================
 
-[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-__UND__)](https://github.com/giellalt/lang-__UND__/issues)
-[![Build Status](https://github.com/giellalt/lang-__UND__/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-__UND__/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-__UND__)](https://raw.githubusercontent.com/giellalt/lang-__UND__/develop/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/__REPO__)](https://github.com/giellalt/__REPO__/issues)
+[![Build Status](https://github.com/giellalt/__REPO__/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/__REPO__/actions)
+[![License](https://img.shields.io/github/license/giellalt/__REPO__)](https://raw.githubusercontent.com/giellalt/__REPO__/main/LICENSE)
 
 This repository contains finite state source files for the __UNDEFINED__ language,
 for building morphological analysers, proofing tools
 and dictionaries. The data and implementation are licenced under __LICENCE__
 licence, also detailed in the
-[LICENCE](https://github.com/giellalt/lang-__UND__/blob/develop/LICENCE). The
+[LICENSE](https://github.com/giellalt/__REPO__/blob/main/LICENSE). The
 authors named in the AUTHORS file are available to grant other licencing
 choices.
 
@@ -20,9 +20,9 @@ for the __UNDEFINED__ language by using the [Divvun Installer](http://divvun.no)
 Spell-checker accuracy:
 
 [![Speller
-Accuracy](https://img.shields.io/badge/Speller_Accuracy-XX_%25-green.svg)](https://giellalt.github.io/lang-__UND__/speller-report.html)
+Accuracy](https://img.shields.io/badge/Speller_Accuracy-XX_%25-green.svg)](https://giellalt.github.io/__REPO__/speller-report.html)
 [![Spell-checking accuracy development
-graph](https://giellalt.github.io/lang-__UND__/speller-report.svg)](https://giellalt.github.io/lang-__UND__/speller-report.svg)
+graph](https://giellalt.github.io/__REPO__/speller-report.svg)](https://giellalt.github.io/__REPO__/speller-report.svg)
 
 
 
@@ -32,7 +32,7 @@ Documentation
 Documentation can be found at:
 
 - [In source documentation generated with github
-   pages](https://gilellalt.github.io/lang-__UND__/)
+   pages](https://gilellalt.github.io/__REPO__/)
 -   <https://giellalt.uit.no/lang/__UND__doc/index.html>
 -   <https://giellalt.uit.no/index.html>
 
@@ -77,18 +77,18 @@ Downloading
 
 Using Git:
 ```
-git clone https://github.com/giellalt/lang-__UND__
+git clone https://github.com/giellalt/__REPO__
 ```
 
 Using Subversion:
 ```
-svn checkout https://github.com/giellalt/lang-__UND__.git/trunk lang-__UND__
+svn checkout https://github.com/giellalt/__REPO__.git/trunk __REPO__
 ```
 
 Building and installation
 -------------------------
 
-[INSTALL](https://github.com/giellalt/lang-__UND__/blob/develop/INSTALL)
+[INSTALL](https://github.com/giellalt/__REPO__/blob/main/INSTALL)
 describes the GNU build system in detail, but for most users it is the usual:
 
 ```sh
