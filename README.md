@@ -3,7 +3,7 @@ The __UNDEFINED__ morphology and tools
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/__REPO__)](https://github.com/giellalt/__REPO__/issues)
 [![Build Status](https://github.com/giellalt/__REPO__/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/__REPO__/actions)
-[![License](https://img.shields.io/github/license/giellalt/__REPO__)](https://raw.githubusercontent.com/giellalt/__REPO__/main/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/__REPO__)](https://github.com//giellalt/__REPO__/blob/main/LICENSE)
 
 This repository contains finite state source files for the __UNDEFINED__ language,
 for building morphological analysers, proofing tools
