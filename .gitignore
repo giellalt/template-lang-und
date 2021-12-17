@@ -26,6 +26,7 @@
 /devtools/test_grammar_checker.sh
 /devtools/test_ospell-office_suggestions.sh
 /devtools/test_voikkospell_suggestions.sh
+tools/tts/test/run_tests.sh
 /docs/*-affixes.md
 /docs/*-generated.md
 /docs/*-morphology.md
