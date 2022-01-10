@@ -26,7 +26,6 @@
 /devtools/test_grammar_checker.sh
 /devtools/test_ospell-office_suggestions.sh
 /devtools/test_voikkospell_suggestions.sh
-tools/tts/test/run_tests.sh
 /docs/*-affixes.md
 /docs/*-generated.md
 /docs/*-morphology.md
@@ -111,6 +110,7 @@ tools/tts/test/run_tests.sh
 /tools/tts/functions.cg3
 /tools/tts/mwe-dis.cg3
 /tools/tts/pipespec.xml
+/tools/tts/test/run_tests.sh
 Makefile
 Makefile.in
 build
