@@ -45,7 +45,6 @@
 /misc/*
 /src/cg3/dependency.cg3
 /src/cg3/functions.cg3
-/src/cg3/generated-tag-list.cg3
 /src/cg3/valency-postspell.cg3
 /src/filters/*-tags.txt
 /src/filters/remove-*area-*.regex
@@ -120,3 +119,4 @@ Makefile
 Makefile.in
 build
 bygg
+generated-tag-list.*
