@@ -2,7 +2,7 @@ The __UNDEFINED__ morphology and tools
 ==========================================
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/__REPO__)](https://github.com/giellalt/__REPO__/issues)
-[![Build Status](https://github.com/giellalt/__REPO__/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/__REPO__/actions)
+[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/__REPO__/main/badge.svg)](https://github.com/giellalt/__REPO__/actions)
 [![License](https://img.shields.io/github/license/giellalt/__REPO__)](https://github.com/giellalt/__REPO__/blob/main/LICENSE)
 
 This repository contains finite state source files for the __UNDEFINED__ language,
