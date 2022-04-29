@@ -1022,6 +1022,8 @@ AS_IF([test x$enable_tts = xyes -a x$enable_transcriptors = xno],
     [AC_MSG_ERROR([You need to enable transcriptors to build tts])])
 AS_IF([test x$enable_tts = xyes -a x$enable_phonetic = xno],
     [AC_MSG_ERROR([You need to enable phonetic to build tts])])
+AS_IF([test x$enable_tts = xyes -a x$enable_tokenisers = xno],
+    [AC_MSG_ERROR([You need to enable phonetic to build tts])])
 AM_CONDITIONAL([WANT_TTS], [test "x$enable_tts" != xno])
 enableval=''
 
