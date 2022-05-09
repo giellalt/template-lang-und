@@ -1031,6 +1031,32 @@ enableval=''
 ]) # gt_ENABLE_TARGETS
 
 ################################################################################
+# Define function to enable optional shared targets
+################################################################################
+# Usage: gt_USE_SHARED([NAME], [SHARED REPONAME])
+# 
+AC_DEFUN([gt_USE_SHARED],
+[
+THIS_TOP_SRC_DIR=$BUILD_DIR_PATH/$MYSRCDIR
+
+AC_MSG_CHECKING([whether we can use shared $1])
+# Check in the parent directory:
+AS_IF([test -d "$THIS_TOP_SRC_DIR"/../$2 ], [
+    gt_SHARED_$1="$THIS_TOP_SRC_DIR"/../$2
+    ], [
+        AS_IF([pkg-config --exists $2], [
+            gt_SHARED_$1="$(pkg-config --variable=dir $1)"
+        ],
+        [
+            gt_SHARED_$1=false
+            AC_MSG_WARN([Could not find $1 data dir to set $1])
+        ])
+    ])
+AC_MSG_RESULT([$gt_SHARED_$1])
+AC_ARG_VAR([gt_SHARED_$1])
+]) # gt_USE_SHARED
+
+################################################################################
 # Define function to print the configure footer
 ################################################################################
 AC_DEFUN([gt_PRINT_FOOTER],
