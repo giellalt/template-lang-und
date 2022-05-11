@@ -1034,7 +1034,7 @@ enableval=''
 # Define function to enable optional shared targets
 ################################################################################
 # Usage: gt_USE_SHARED([NAME], [SHARED REPONAME])
-# 
+#
 AC_DEFUN([gt_USE_SHARED],
 [
 THIS_TOP_SRC_DIR=$BUILD_DIR_PATH/$MYSRCDIR
@@ -1045,11 +1045,12 @@ AS_IF([test -d "$THIS_TOP_SRC_DIR"/../$2 ], [
     gt_SHARED_$1="$THIS_TOP_SRC_DIR"/../$2
     ], [
         AS_IF([pkg-config --exists $2], [
-            gt_SHARED_$1="$(pkg-config --variable=dir $1)"
+            gt_SHARED_$1="$(pkg-config --variable=dir $2)"
         ],
         [
             gt_SHARED_$1=false
-            AC_MSG_WARN([Could not find $1 data dir to set $1])
+            AC_MSG_WARN([Could not find $2 data dir to set $1])
+            gt_SHARED_FAILS="$2"
         ])
     ])
 AC_MSG_RESULT([$gt_SHARED_$1])
@@ -1148,5 +1149,14 @@ sudo pip-3.5 install PyYAML
 
 On other systems, install python 3.5+ and the corresponding py-yaml using suitable tools for those systems.])])
 
+AS_IF([test "x$gt_SHARED_FAILS" != "x"],
+      [AC_MSG_WARN([This language depends on $gt_SHARED_FAILS which is missing, some parts of language models may be missing.
+
+to get missing components fetch and build https://github.com/giellalt/$gt_SHARED_FAILS:
+
+cd ..
+git clone git@github.com:giellalt/$gt_SHARED_FAILS
+cd $gt_SHARED_FAILS
+./autogen.sh && ./configure && make])])
 ]) # gt_PRINT_FOOTER
 # vim: set ft=config:
