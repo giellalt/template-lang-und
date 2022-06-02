@@ -120,9 +120,6 @@ SSH_REPO_HOST=git@github.com:giellalt
 
 
 get_dep_repo "giella-core" "giella-core" "$repoformat"
-## TODO: remove after shared-mul is in place for long enough
-get_dep_repo "giella-shared" "giella-common" "$repoformat"
-get_dep_repo "shared-mul" "giella-shared-mul" "$repoformat"
 if grep -F -q 'gt_USE_SHARED' configure.ac ; then
     grep -F 'gt_USE_SHARED' configure.ac |\
             sed -e 's/^.*gt_USE_SHARED//' | tr -d '[( )]' |\
