@@ -80,6 +80,7 @@ function get_dep_repo() {
         elif test "$repoformat" == "svn" ; then
             echo "Nothing found, checking out $reponame in ../"
             cd "$LANGDIR/../" && svn_check_out "$reponame" || exit 2
+            cd "$LANGDIR" || exit 2
         else
             echo "ERROR: Not possible to find or get $reponame. Giving up."
             exit 1
