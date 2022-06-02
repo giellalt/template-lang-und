@@ -36,22 +36,6 @@ function git_clone() {
     fi
 }
 
-function make_symlink() {
-    origdir=$1
-    envvar=$2
-    reponame=$3
-    packagename=$4
-    # Check that the dir contains the packagename.pc.in file, if yes, create symlink:
-    if test -f "$origdir/$packagename.pc.in" ; then
-        echo "Found $envvar => $origdir, creating symbolic link to $reponame in $LANGDIR/../"
-        ln -s "$origdir" ../"$reponame"
-    else # If not, error out with a message that the repo is broken:
-        echo "ERROR: Found $origdir, but it seems to be broken:"
-        echo "It does not contain $packagename.pc.in"
-        exit 1
-    fi
-}
-
 function get_dep_repo() {
     reponame=$1 # no spaces around '='! Or it will fail!
     packagename=$2
