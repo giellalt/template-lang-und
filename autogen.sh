@@ -12,8 +12,8 @@ LOGINFILE=
 
 function print_usage() {
     echo "Usage: $0 [OPTIONS...]"
-    echo "Prepare Autotools build infrastructure, ensure that giella-shared and"
-    echo "giella-core is available before setting up Autotools."
+    echo "Prepare Autotools build infrastructure, ensure that giella-core"
+    echo "is available before setting up Autotools."
     echo
     echo "  -h, --help          print this usage info"
     echo "  -l, --add-langvar   Add env. variable \$GTLANG_$GTLANG to login script."
