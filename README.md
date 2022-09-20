@@ -38,8 +38,6 @@ Documentation
 
 Documentation can be found at:
 
-- [In source documentation generated with github
-   pages](https://gilellalt.github.io/__REPO__/)
 -   <https://giellalt.uit.no/lang/__UND__doc/index.html>
 -   <https://giellalt.uit.no/index.html>
 
