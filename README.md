@@ -38,7 +38,7 @@ Documentation
 
 Documentation can be found at:
 
--   <https://giellalt.uit.no/lang/__UND__doc/index.html>
+- [Language specific documentation](https://giellalt.github.io/__REPO__/)
 -   <https://giellalt.uit.no/index.html>
 
 Core dependencies
