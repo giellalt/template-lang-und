@@ -39,7 +39,7 @@ Documentation
 Documentation can be found at:
 
 - [Language specific documentation](https://giellalt.github.io/__REPO__/)
--   <https://giellalt.uit.no/index.html>
+- [General documentation](https://giellalt.github.io/)
 
 Core dependencies
 -----------------
