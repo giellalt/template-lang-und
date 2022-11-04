@@ -1,8 +1,8 @@
 !! Numerals
 !  --------
-!! Numerals in the __UNDEFINED__ language are numbers.
+!! Numerals in the __UNDEFINED__ language describe a nuerical quantity.
 
 LEXICON Numerals
-numeral    Cases   ;
+numeral+Num:numeral    Cases   ;
 
 ! vim: set ft=xfst-lexc:

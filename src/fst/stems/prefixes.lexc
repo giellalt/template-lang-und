@@ -1,6 +1,6 @@
 !! Prefixes
 !  --------
-!! Prefixes in the __UNDEFINED__ language are bound to beginning of other words.
+!! Prefixes in the __UNDEFINED__ language are attatched to the left of other words.
 
 LEXICON Prefixes
 nounprefix-     Nouns   ;

@@ -1,6 +1,6 @@
 !! Adjectives
 !  ----------
-!! Adjectives in the __UNDEFINED__ language describe things.
+!! Adjectives in the __UNDEFINED__ language describe the entities nouns refer to.
 
 LEXICON Adjectives
 adjective    Comparisons   ;

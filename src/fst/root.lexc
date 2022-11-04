@@ -39,7 +39,7 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 
 !! The nominals are inflected in the following Case and Number
  +Sg +Du +Pl
- +Ess +Nom +Gen +Acc +Ill +Loc +Com +Com/Sh
+ +Ess +Nom +Gen +Acc +Ill +Loc +Com 
 
 !! The possession is marked as such:
  +PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3
@@ -72,7 +72,9 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 
 
 !! Semantics are classified with
- +Mal +Fem +Sur 
+ +Mal 
+ +Fem 
+ +Sur 
  +Plc 
  +Org
  +Obj
@@ -137,13 +139,13 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 LEXICON Root
 !! The word forms in __UNDEFINED__ language start from the lexeme roots of basic
 !! word classes, or optionally from prefixes:
-0   Nouns       ;
-0   Verbs       ;
-0   Adjectives  ;
-0   Pronouns    ;
-0   Numerals    ;
-0   Prefixes    ;
-    Punctuation ;
-    Symbols     ;
+ Nouns       ;
+ Verbs       ;
+ Adjectives  ;
+ Pronouns    ;
+ Numerals    ;
+ Prefixes    ;
+ Punctuation ;
+ Symbols     ;
 
 ! vim: set ft=xfst-lexc:

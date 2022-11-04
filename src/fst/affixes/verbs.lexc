@@ -3,14 +3,13 @@
 !! The __UNDEFINED__ language verbs inflect in persons.
 
 LEXICON Persons
-+V+1sg:en   #   ;
-+V+2sg:et   #   ;
-+V+3sg:e    #   ;
-+V+1pl:ien  #   ;
-+V+2pl:iet  #   ;
-+V+3pl:iet  #   ;
-+V+inf:0    #   ;
-#:0   Nouns   ;
++V+Inf:0    #   ;
++V+Sg1:en   #   ;
++V+Sg2:et   #   ;
++V+Sg3:e    #   ;
++V+Pl1:ien  #   ;
++V+Pl2:iet  #   ;
++V+Pl3:iet  #   ;
 
 ! vim: set ft=xfst-lexc:
 

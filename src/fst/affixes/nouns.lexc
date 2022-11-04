@@ -1,15 +1,15 @@
 !! Noun inflection
 !  ---------------
-!! The __UNDEFINED__ language nouns inflect in cases.
+!! The __UNDEFINED__ language nouns inflect in number and cases.
 
 LEXICON Cases
- +N+Sg+nom:0   #     ;
- +N+Pl+nom:i   #     ;
- +N+Sg+loc:as  #     ;
- +N+Pl+loc:ias #     ;
- +N+Sg+acc:at  #     ;
- +N+Pl+acc:iat #     ;
-         #:0   Nouns ;
+ +N+Sg+Nom:0   #     ;
+ +N+Pl+Nom:i   #     ;
+ +N+Sg+Acc:at  #     ;
+ +N+Pl+Acc:iat #     ;
+ +N+Sg+Loc:as  #     ;
+ +N+Pl+Loc:ias #     ;
+         #:0   Nouns ; ! Normally going via a R lexicon adding compound tags.
 
 ! vim: set ft=xfst-lexc:
 

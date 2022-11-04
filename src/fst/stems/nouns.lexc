@@ -1,8 +1,8 @@
 !! Nouns
 !  -----
-!! Nouns in the __UNDEFINED__ language are things.
+!! Nouns in the __UNDEFINED__ language refer to objects or sets of objects, qualities, states or ideas.
 
 LEXICON Nouns
-noun    Cases   ;
+noun+N:noun    Cases   ;
 
 ! vim: set ft=xfst-lexc:

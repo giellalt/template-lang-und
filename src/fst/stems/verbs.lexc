@@ -1,6 +1,6 @@
 !! Verbs
 !  -----
-!! Verbs in the __UNDEFINED__ language are actions.
+!! Verbs in the __UNDEFINED__ language inflect for tense.
 
 LEXICON Verbs
 verb    Persons   ;
