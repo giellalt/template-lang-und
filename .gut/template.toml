@@ -6,7 +6,8 @@
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__", "__LICENSE__", "__REPO__"]
 rev_id = 110
-required = [".gitignore",
+required = [".build-config.yml",
+            ".gitignore",
             ".github/workflows/docsygen.yml",
             "Makefile.am",
             "autogen.sh",
