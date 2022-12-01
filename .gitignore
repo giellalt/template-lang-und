@@ -60,6 +60,10 @@
 /src/fst/generated_files/*.lexc
 /src/fst/lexicon*
 /src/fst/url.lexc
+/src/hyphenators/*.dic
+/src/hyphenators/*.txt
+/src/hyphenators/*.pat
+/src/hyphenators/*_hyph.tex
 /src/phonetics/tests/*.sh
 /test/run-morph-tester.sh
 /test/run-yaml-testcases.sh
