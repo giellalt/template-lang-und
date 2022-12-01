@@ -60,10 +60,6 @@
 /src/fst/generated_files/*.lexc
 /src/fst/lexicon*
 /src/fst/url.lexc
-/src/hyphenators/*.dic
-/src/hyphenators/*.txt
-/src/hyphenators/*.pat
-/src/hyphenators/*_hyph.tex
 /src/phonetics/tests/*.sh
 /test/run-morph-tester.sh
 /test/run-yaml-testcases.sh
@@ -94,7 +90,10 @@
 /tools/grammarcheckers/modes
 /tools/grammarcheckers/pipespec.xml
 /tools/grammarcheckers/schemas.xml
-/tools/hyphenators/all_tags.txt
+/tools/hyphenators/*.dic
+/tools/hyphenators/*.txt
+/tools/hyphenators/*.pat
+/tools/hyphenators/*_hyph.tex
 /tools/mt/apertium/*.cg3
 /tools/mt/apertium/tagsets/apertium.relabel
 /tools/mt/apertium/tagsets/apertium.postproc.relabel
