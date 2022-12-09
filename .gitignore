@@ -90,10 +90,8 @@
 /tools/grammarcheckers/modes
 /tools/grammarcheckers/pipespec.xml
 /tools/grammarcheckers/schemas.xml
-/tools/hyphenators/*.dic
 /tools/hyphenators/*.txt
 /tools/hyphenators/*.pat
-/tools/hyphenators/*_hyph.tex
 /tools/mt/apertium/*.cg3
 /tools/mt/apertium/tagsets/apertium.relabel
 /tools/mt/apertium/tagsets/apertium.postproc.relabel
