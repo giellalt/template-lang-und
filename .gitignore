@@ -125,4 +125,4 @@ Makefile
 Makefile.in
 build
 bygg
-generated-tag-list.*
+generated*
