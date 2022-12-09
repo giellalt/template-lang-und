@@ -6,8 +6,7 @@
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__", "__LICENSE__", "__REPO__"]
 rev_id = 110
-required = [".build-config.yml",
-            ".gitignore",
+required = [".gitignore",
             ".github/workflows/docsygen.yml",
             "Makefile.am",
             "autogen.sh",
@@ -131,7 +130,8 @@ required = [".build-config.yml",
             "tools/tts/Makefile.am",
             "tools/tts/test/Makefile.am"]
 
-optional = [".taskcluster.yml",
+optional = [".build-config.yml",
+            ".taskcluster.yml",
             "AUTHORS",
             "INSTALL",
             "LICENSE",
