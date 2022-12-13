@@ -57,23 +57,11 @@ Could not set GIELLA_CORE and thus not find required scripts in:
        $PATH
 
        Please do the following:
-       1. svn co https://github.com/giellalt/giella-core.git/trunk
-       2. then either:
-         a: cd giella-core && ./autogen.sh && ./configure && make
+       0. cd ..
+       1. git clone https://github.com/giellalt/giella-core.git # or similar using svn
+       2. cd giella-core && ./autogen.sh && ./configure && make
 
-          or:
-         b: add the following to your ~/.bash_profile or ~/.profile:
-
-       export \$GIELLA_CORE=/path/to/giella-core/checkout/dir
-
-       (replace the path with the real path from 1. above)
-
-          or:
-         c: run configure as follows
-
-       ./configure --with-giella-core=/path/to/giella-core/checkout/dir
-
-       (replace the path with the real path from 1. above)
+       Then retry this script.
 "
 
 AC_MSG_CHECKING([whether we can set GIELLA_CORE])
