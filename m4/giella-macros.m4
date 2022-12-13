@@ -140,48 +140,6 @@ AS_IF([test "x${giella_core_version_ok}" != xno], [AC_MSG_RESULT([$giella_core_v
 [AC_MSG_ERROR([$giella_core_too_old_message])])
 
 ################################
-### Giella-libs dir:
-################
-# 1. check --with-giella-libs option
-# 2. check env GIELLA_LIBS, then GIELLA_HOME, then GTHOME
-# 3. empty if not found
-
-AC_ARG_WITH([giella-libs],
-            [AS_HELP_STRING([--with-giella-libs=DIRECTORY],
-                            [search giella-libs data in DIRECTORY @<:@default=PATH@:>@])],
-            [with_giella_libs=$withval],
-            [with_giella_libs=false])
-
-AC_MSG_CHECKING([whether we can set GIELLA_LIBS])
-# --with-giella-libs overrides everything:
-AS_IF([test "x$with_giella_libs" != "xfalse" -a \
-          -d "$with_giella_libs" ], [
-    GIELLA_LIBS=$with_giella_libs
-    ],[
-    # GIELLA_LIBS is the env. variable for this dir:
-    AS_IF([test "x$GIELLA_LIBS" != "x" -a \
-              -d "$GIELLA_LIBS"], [], [
-        # GIELLA_HOME is the new GTHOME:
-        AS_IF([test "x$GIELLA_HOME" != "x" -a \
-                  -d "$GIELLA_HOME/giella-libs" ], [
-            GIELLA_LIBS=$GIELLA_HOME/giella-libs
-        ], [
-            # GTHOME for backwards compatibility - it is deprecated:
-            AS_IF([test "x$GTHOME" != "x" -a \
-                      -d "$GTHOME/giella-libs" ], [
-                GIELLA_LIBS=$GTHOME/giella-libs
-            ], [
-                GIELLA_LIBS=no
-            ])
-        ])
-    ])
-])
-AC_MSG_RESULT([$GIELLA_LIBS])
-
-# GIELLA_LIBS is needed for speller builds, but if not found, we'll try to fetch over the net:
-AC_ARG_VAR([GIELLA_LIBS], [directory containing precompiled libraries for proofing tools])
-
-################################
 ### Some software that we either depend on or we need for certain functionality:
 ################
 
