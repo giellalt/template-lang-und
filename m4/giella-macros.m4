@@ -97,7 +97,9 @@ AS_IF([test "x$with_giella_core" != "xfalse" -a \
 ])
 AC_MSG_RESULT([$GIELLA_CORE])
 
-### This is the version of the Giella Core that we require. Update as needed.
+###############################################################
+### This is the version of the Giella Core that we require. ###
+### UPDATE AS NEEDED.
 _giella_core_min_version=0.16.5
 
 # GIELLA_CORE/GTCORE env. variable, required by the infrastructure to find scripts:
