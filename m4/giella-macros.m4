@@ -948,11 +948,10 @@ cat<<EOF
   * hyphenators:
     * fst hyphenator enabled: $enable_fst_hyphenator
     * pattern hyphenator enabled (requires fst hyph): $enable_fst_hyphenator
-  * spellers (zhfst files) enabled: $enable_spellers
-    * desktop spellers:
-      * foma speller enabled: $enable_fomaspeller
-    * mobile spellers (off by default, even with spellers enabled):
-      * hfst speller enabled: $enable_mobile_hfstspeller
+  * spellers:
+    * zhfst desktop speller enabled: $enable_spellers
+    * foma speller enabled: $enable_fomaspeller
+    * mobile speller enabled: $enable_mobile_hfstspeller
     * neural speller enabled: $enable_neural_speller
   * grammar checker enabled: $enable_grammarchecker
 
