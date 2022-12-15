@@ -685,16 +685,6 @@ AS_IF([test "x$enable_spellers" = xno -o "x$gt_prog_hfst" = xno], [enable_mobile
               AC_MSG_ERROR([xz is missing - required for mobile zhfst spellers])])])
 AM_CONDITIONAL([WANT_HFST_MOBILE_SPELLER], [test "x$enable_mobile_hfstspeller" != xno])
 
-# Enable Vfst-based spellers - default is no
-AC_ARG_ENABLE([vfstspeller],
-              [AS_HELP_STRING([--enable-vfstspeller],
-                              [build vfst speller (dependent on --enable-hfst-mobile-speller) @<:@default=no@:>@])],
-              [enable_vfstspeller=$enableval],
-              [enable_vfstspeller=no])
-AS_IF([test "x$enable_vfstspeller" = "xyes" -a "x$enable_mobile_hfstspeller" = xno],
-              [enable_vfstspeller=no])
-AM_CONDITIONAL([WANT_VFST_SPELLER], [test "x$enable_vfstspeller" != xno])
-
 AC_ARG_ENABLE([neural-speller],
               [AS_HELP_STRING([--enable-neural-speller],
                               [build neural speller with opennmt-py @<:@default=no@:>@])],
@@ -963,7 +953,6 @@ cat<<EOF
       * foma speller enabled: $enable_fomaspeller
     * mobile spellers (off by default, even with spellers enabled):
       * hfst speller enabled: $enable_mobile_hfstspeller
-      * vfst speller enabled: $enable_vfstspeller
     * neural speller enabled: $enable_neural_speller
   * grammar checker enabled: $enable_grammarchecker
 
