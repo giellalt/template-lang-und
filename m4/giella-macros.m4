@@ -960,7 +960,6 @@ cat<<EOF
     * pattern hyphenator enabled (requires fst hyph): $enable_fst_hyphenator
   * spellers (zhfst files) enabled: $enable_spellers
     * desktop spellers:
-      * installable packages enabled: $enable_desktop_hfstspellers
       * foma speller enabled: $enable_fomaspeller
     * mobile spellers (off by default, even with spellers enabled):
       * hfst speller enabled: $enable_mobile_hfstspeller
