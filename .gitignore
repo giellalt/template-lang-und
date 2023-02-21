@@ -138,3 +138,8 @@
 /tools/tts/pipespec.xml
 /tools/tts/convert-*.sh
 /tools/tts/test/run_tests.sh
+Makefile
+Makefile.in
+build
+bygg
+generated*
