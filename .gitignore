@@ -78,6 +78,9 @@
 /src/orthography/spellrelax-nfd2nfc.regex
 /src/orthography/spellrelax-nfd2nfc.regex.sigma.nfc
 /src/orthography/spellrelax-nfd2nfc.regex.sigma.nfd
+/src/orthography/spellrestrict-nfd2nfc.regex
+/src/orthography/spellrestrict-nfd2nfc.regex.sigma.nfc
+/src/orthography/spellrestrict-nfd2nfc.regex.sigma.nfd
 /test/src/phonology/negative-*.txt
 /test/src/phonology/pair-*.txt
 /test/src/phonology/pair-test-*.sh
