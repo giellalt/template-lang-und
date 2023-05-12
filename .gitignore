@@ -106,6 +106,7 @@
 /tools/grammarcheckers/modes
 /tools/grammarcheckers/pipespec.xml
 /tools/grammarcheckers/schemas.xml
+/tools/grammarcheckers/grammarchecker-release.cg3
 /tools/hyphenators/*.txt
 /tools/hyphenators/*.pat
 /tools/mt/apertium/*.cg3
