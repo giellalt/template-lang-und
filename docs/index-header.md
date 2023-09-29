@@ -3,7 +3,7 @@
 [![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
 [![License](https://img.shields.io/github/license/giellalt/__REPO__)](https://github.com/giellalt/__REPO__/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-__UND__)](https://github.com/giellalt/lang-__UND__/issues)
-[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/__REPO__/main/badge.svg)](https://github.com/giellalt/__REPO__/actions)
+[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/__REPO__/main/badge.svg)](https://github.com/giellalt/__REPO__/actions)
 
 This page documents the work on the **__UNDEFINED__ language model**. 
 
