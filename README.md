@@ -2,7 +2,7 @@ The __UNDEFINED__ morphology and tools
 ==========================================
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/__REPO__)](https://github.com/giellalt/__REPO__/issues)
-[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/__REPO__/main/badge.svg)](https://github.com/giellalt/__REPO__/actions)
+[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/__REPO__/main/badge.svg)](https://github.com/giellalt/__REPO__/actions)
 [![License](https://img.shields.io/github/license/giellalt/__REPO__)](https://github.com/giellalt/__REPO__/blob/main/LICENSE)
 [![Desktop speller download](https://img.shields.io/badge/download%40latest-desktop--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-__UND__?platform=desktop&channel=nightly)
 [![Mobile speller download](https://img.shields.io/badge/download%40latest-mobile--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-__UND__?platform=mbile&channel=nightly)
