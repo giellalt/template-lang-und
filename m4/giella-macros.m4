@@ -845,9 +845,9 @@ AC_ARG_ENABLE([abbr],
               [enable_abbr=$enableval],
               [enable_abbr=no])
 AS_IF([test x$enable_abbr != xno -a \
-    "$(find ${srcdir}/src/fst/morphology/stems/ -name "abbreviations.lexc" | head -n 1)" = "" ],
+    "$(find ${srcdir}/src/fst/morphology/stems -name "abbreviations.lexc" | head -n 1)" = "" ],
     [AC_MSG_ERROR([You asked for abbr.txt generation, but have no file \
-src/fst/morphoogy/stems/abbreviations.lexc])])
+src/fst/morphology/stems/abbreviations.lexc])])
 AS_IF([test x$enable_abbr = xyes -a x$enable_generators = xno],
     [AC_MSG_ERROR([You need to enable generators to build the abbr file])])
 AM_CONDITIONAL([WANT_ABBR], [test "x$enable_abbr" != xno])
