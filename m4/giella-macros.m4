@@ -790,7 +790,7 @@ AC_ARG_ENABLE([L2],
               [enable_L2=no])
 AS_IF([test x$enable_oahpa = xno], [enable_L2=no],
     [AS_IF([test x$enable_L2 != xno -a \
-      "$(find ${srcdir}/src -name "*-L2.*" | head -n 1)" = "" ],
+      "$(find ${srcdir}/src/fst -name "*-L2.*" | head -n 1)" = "" ],
       [AC_MSG_ERROR([You asked for the L2 analyser, but no L2 files were found])])])
 AM_CONDITIONAL([WANT_L2], [test "x$enable_L2" != xno])
 
