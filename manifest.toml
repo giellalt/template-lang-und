@@ -1,8 +1,20 @@
-name = "Undefined"
+name = "__UNDEFINED__"
 version = "0.1.0"
 
+# Name of the speller package in various languages.
+# The default is English + autonym:
+[speller.name]
+en = "__UNDEFINED__ spellchecker"
+__UND2C__ = "Autonym spellchecker"
+
+# Description of the speller package in various languages.
+# The default is English + autonym:
+[speller.description]
+en = "A spellchecker for __UNDEFINED__, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"
+__UND2C__ = "TRANSLATE: A spellchecker for __UNDEFINED__, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"
+
 [macos]
-system_pkg_id = "no.divvun.MacDivvun.und"
+system_pkg_id = "no.divvun.MacDivvun.__UND2C__"
 
 [windows]
 system_product_code = "{REPLACE_WITH_REAL_SYSTEM_PROD_CODE}_is1"
