@@ -1048,7 +1048,6 @@ cd ..
 git clone git@github.com:giellalt/$gt_SHARED_FAILS
 cd $gt_SHARED_FAILS
 ./autogen.sh && ./configure && make])])
-AC_MSG_WARN([January 2024: the lexc files and fsts have been moved up to src/fst/morphology])
 ]) # gt_PRINT_FOOTER
 
 # vim: set ft=config:
