@@ -167,7 +167,7 @@ AS_IF([test "x$enable_grammarchecker" != "xno"],
     # Check for gtgramtool for grammarcheckers
     AC_PATH_PROG([GTGRAMTOOL], [gtgramtool], [false])
     AS_IF([test x$GTGRAMTOOL = xfalse], 
-        [AC_MSG_ERROR([make_gramchecker_zip is needed for --enable grammarchecker.
+        [AC_MSG_ERROR([gtgramtool is needed for --enable grammarchecker.
         on debian/ubuntu: sudo apt update; sudo apt install pipx; pipx ensurepath
         on macbrew: brew install pipx; pipx ensurepath
         then: pipx install git+https://github.com/divvun/giellaltgramtools
