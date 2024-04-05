@@ -162,21 +162,17 @@ AS_IF([test "x$enable_yamltests" = "xcheck"],
 
 AM_CONDITIONAL([CAN_YAML_TEST], [test "x$enable_yamltests" != xno])
 
-################ LXML or pip ################
+################ gtgramtool ################
 AS_IF([test "x$enable_grammarchecker" != "xno"],
-     [AM_PATH_PYTHON([3.5],, [:])
-     AX_PYTHON_MODULE(lxml)
-     AX_PYTHON_MODULE(pip)
-     AC_MSG_CHECKING([whether we can use lxml])
-     AS_IF([test "x$HAVE_PYMOD_LXML" != "xyes"],
-           AS_IF([test "x$HAVE_PYMOD_PIP" != "xno"],
-                 AC_MSG_RESULT(no)
-                 AC_MSG_WARN([lxml or pip is needed for grammarcheckers]),
-                 AC_MSG_RESULT([no but using pip])),
-           AC_MSG_RESULT(yes))])
+    # Check for gtgramtool for grammarcheckers
+    AC_PATH_PROG([GTGRAMTOOL], [gtgramtool], [false])
+    AS_IF([test x$GTGRAMTOOL = xfalse], 
+        [AC_MSG_ERROR([make_gramchecker_zip is needed for --enable grammarchecker.
+        on debian/ubuntu: sudo apt update; sudo apt install pipx; pipx ensurepath
+        on macbrew: brew install pipx; pipx ensurepath
+        then: pipx install git+https://github.com/divvun/giellaltgramtools
+        ])])
 
-AM_CONDITIONAL([CAN_LXML], [test "x$HAVE_PYMOD_LXML" != xno])
-AM_CONDITIONAL([CAN_PIP], [test "x$HAVE_PYMOD_LXML" != xno])
 ################ Generated documentation ################
 # Check for awk with required feature:
 AC_CACHE_CHECK([for awk that supports gensub], [ac_cv_path_GAWK],
