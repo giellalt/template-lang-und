@@ -1,10 +1,10 @@
 Config:
   hfst:
-    Gen:   ../../../../tools/mt/apertium/generator-mt-gt-norm.hfst
-    Morph: ../../../../tools/mt/apertium/analyser-mt-gt-desc.hfst
+    Gen:   ../generator-mt-gt-norm.hfst
+    Morph: ../analyser-mt-gt-desc.hfst
   xerox:
-    Gen:   ../../../../tools/mt/apertium/generator-mt-gt-norm.xfst
-    Morph: ../../../../tools/mt/apertium/analyser-mt-gt-desc.xfst
+    Gen:   ../generator-mt-gt-norm.xfst
+    Morph: ../analyser-mt-gt-desc.xfst
     App: lookup
 
 Tests:

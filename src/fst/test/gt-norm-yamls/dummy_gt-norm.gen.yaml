@@ -1,0 +1,12 @@
+Config:
+  hfst:
+    Gen:   ../../src/generator-gt-norm.hfst
+    Morph: ../../src/analyser-gt-desc.hfst
+  xerox:
+    Gen:   ../../src/generator-gt-norm.xfst
+    Morph: ../../src/analyser-gt-desc.xfst
+    App: lookup
+
+Tests:
+  Dummy test replace with real content - noun:
+    noun+N+sg+nom: noun
