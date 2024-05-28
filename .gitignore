@@ -21,8 +21,12 @@
 *.zhfst
 *.zip
 *.zpipe
+*.py.log
+*.py.trs
 *.sh.log
 *.sh.trs
+*.yaml.log
+*.yaml.trs
 .DS_Store
 .bundle
 .~lock.*#
