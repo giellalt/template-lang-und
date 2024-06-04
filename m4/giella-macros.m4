@@ -998,6 +998,9 @@ To build, test and install:
     make
     make check
     make install
+The developers’ version of the test suite is available under:
+    make devtest
+this version does not halt on errors and should be useful when fixing bugs
 EOF
 AS_IF([test x$gt_prog_xslt = xno -a \
       "$(find ${srcdir}/src/fst/morphology/stems -name "*.xml" | head -n 1)" != "" ],
