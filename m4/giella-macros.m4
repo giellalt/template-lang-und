@@ -1048,10 +1048,8 @@ AS_IF([test "x$enable_yamltests" = "xno"],
                [*darwin*], [AC_MSG_WARN([YAML testing could not be automatically enabled. 
 To enable it, on MacOSX please do:
 
-    sudo port install python38 py38-pip
-    sudo python3 -m pip install PyYAML
-
-replace 38 in python38 with current python])],
+    sudo brew install python pyyaml
+    sudo python3 -m pip install PyYAML])],
                [*linux*], [AC_MSG_WARN([YAML testing could not be automatically enabled. 
                 To enable it on linux please use your package manager to install python an pyyaml,
                 or install pip and use it to install pyyaml.])],
