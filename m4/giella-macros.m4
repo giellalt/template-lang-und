@@ -674,7 +674,7 @@ AS_IF([test "x$enable_grammarchecker" != "xno"],
         then: pipx install git+https://github.com/divvun/giellaltgramtools
       ])]),
     AC_MSG_RESULT(yes))
-_gtgramtool_min_version=0.7.0
+_gtgramtool_min_version=1.0.1
 gtgramtool_too_old_message="gtgramtool needs to be updated.
     If you installed it with pipx, run:
         pipx upgrade GiellaLTGramTools"
