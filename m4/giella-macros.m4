@@ -919,7 +919,7 @@ AS_IF([test "x$enable_dialects" = "xyes" -a "x$DIALECTS" = "x"],
        AC_MSG_ERROR([You have not defined any dialects. Please see the documentation.])])
 AM_CONDITIONAL([WANT_DIALECTS], [test "x$enable_dialects" != xno])
 
-# Enable dialect-specific analysers and tools, such as spellers:
+# Enable custom fst's:
 AC_ARG_ENABLE([custom-fsts],
               [AS_HELP_STRING([--enable-custom-fsts],
                               [build custom fst’s @<:@default=no@:>@])],
