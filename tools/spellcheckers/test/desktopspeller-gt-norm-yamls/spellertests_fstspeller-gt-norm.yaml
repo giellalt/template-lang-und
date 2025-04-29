@@ -1,0 +1,10 @@
+---
+Config:
+  hfst:
+    Gen:  ../fstbased/generator-fstspeller-gt-norm.hfst
+    Morph: ../fstbased/analyser-fstspeller-gt-norm.hfst
+
+Tests:
+  Compound tests: # testing different compounding patterns that should be accepted:
+    guaktah+CmpN/SgNomLeft+Cmp#maana+CmpN/SgN+CmpN/SgG+CmpN/PlG+N+Sg+Nom: [ ~guaktah#maana ]
+    maana+CmpN/SgN+CmpN/SgG+CmpN/PlG+Cmp#guaktah+CmpN/SgNomLeft+N+Pl+Nom: maana#guaktah

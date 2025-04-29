@@ -5,7 +5,7 @@
 # - optional: a full list of all files merged when the --optional flag is used with `gut template`
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__", "__LICENSE__", "__REPO__"]
-rev_id = 213
+rev_id = 214
 required = [".gitattributes",
             ".gitignore",
             ".github/workflows/docsygen.yml",
@@ -78,18 +78,13 @@ required = [".gitattributes",
             "tools/mt/apertium/test/Makefile.am",
             "tools/mt/apertium/test/run-mt-gt-desc-anayaml-testcases.sh",
             "tools/spellcheckers/test/Makefile.am",
-            "tools/spellcheckers/test/fstbased/Makefile.am",
-            "tools/spellcheckers/test/fstbased/desktop/Makefile.am",
-            "tools/spellcheckers/test/fstbased/desktop/hfst/Makefile.am",
-            "tools/spellcheckers/test/fstbased/desktop/hfst/accept-all-lemmas.sh.in",
-            "tools/spellcheckers/test/fstbased/desktop/hfst/run-acceptor-yaml-testcases.sh",
-            "tools/spellcheckers/test/fstbased/desktop/hfst/test-zhfst-basic-sugg-speed.sh.in",
-            "tools/spellcheckers/test/fstbased/mobile/Makefile.am",
-            "tools/spellcheckers/test/fstbased/run-fstspeller-gt-norm-yaml-testcases.sh",
+            "tools/spellcheckers/test/accept-all-lemmas.sh.in",
             "tools/spellcheckers/test/neural/Makefile.am",
+            "tools/spellcheckers/test/run-dekstopspeller-gt-norm-yaml-testcases.sh",
             "tools/spellcheckers/test/run-spellers-gt-norm-yaml-testcases.sh",
             "tools/spellcheckers/test/suggestion-quality.sh.in",
             "tools/spellcheckers/test/test-zhfst-file.sh.in",
+            "tools/spellcheckers/test/test-zhfst-basic-sugg-speed.sh.in",
             "tools/Makefile.am",
             "tools/analysers/Makefile.am",
             "tools/analysers/test/Makefile.am",
