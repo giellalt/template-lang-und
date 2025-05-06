@@ -5,7 +5,7 @@
 # - optional: a full list of all files merged when the --optional flag is used with `gut template`
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__", "__LICENSE__", "__REPO__"]
-rev_id = 214
+rev_id = 215
 required = [".gitattributes",
             ".gitignore",
             ".github/workflows/docsygen.yml",
@@ -52,9 +52,12 @@ required = [".gitattributes",
             "src/fst/test/Makefile.am",
             "src/fst/morphology/test/Makefile.am",
             "src/fst/morphology/test/generate-adjective-lemmas.sh.in",
+            "src/fst/morphology/test/generate-adjective-paradigm.sh.in",
             "src/fst/morphology/test/generate-noun-lemmas.sh.in",
+            "src/fst/morphology/test/generate-noun-paradigm.sh.in",
             "src/fst/morphology/test/generate-propernoun-lemmas.sh.in",
             "src/fst/morphology/test/generate-verb-lemmas.sh.in",
+            "src/fst/morphology/test/generate-verb-paradigm.sh.in",
             "src/fst/morphology/test/missing-multichars.sh.in",
             "src/fst/orthography/test/Makefile.am",
             "src/fst/orthography/test/run-initcaps-genyaml-testcases.sh",
