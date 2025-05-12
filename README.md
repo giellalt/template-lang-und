@@ -16,7 +16,8 @@ Download nightly / CI/CD installation packages for testing (contains the core zh
 
 __NB!!__ Note that the nightly / CI/CD installation packages are not tested for language quality, and might contain regressions and errors.
 
-This repository contains finite state source files for the __UNDEFINED__ language,
+This repository contains finite state source files for the __UNDEFINED__ language
+(ISO 639-3: __UND__, glottolog: __GLOTTOLOG_ID__),
 for building morphological analysers, proofing tools
 and dictionaries. The data and implementation are licenced under __LICENCE__
 licence, also detailed in the
@@ -59,7 +60,7 @@ Core dependencies
 In order to compile and use __UNDEFINED__ language morphology and
 dictionaries, you need:
 
-- an FST compiler: [HFST](https://github.com/hfst/hfst), [Foma](https://github.com/mhulden/foma) or [Xerox Xfst](https://web.stanford.edu/~laurik/fsmbook/home.html)
+- an FST compiler: [HFST](https://github.com/hfst/hfst) or [Foma](https://github.com/mhulden/foma)
 - [VislCG3](https://visl.sdu.dk/svn/visl/tools/vislcg3/trunk) Constraint Grammar tools
 
 To install VislCG3 and HFST, just copy/paste this into your Terminal on **macOS**:
