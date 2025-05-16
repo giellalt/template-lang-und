@@ -6,7 +6,7 @@
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__",
             "__LICENSE__", "__REPO__", "__GLOTTOLOG_ID__"]
-rev_id = 218
+rev_id = 219
 required = [".gitattributes",
             ".gitignore",
             ".github/workflows/docsygen.yml",
@@ -164,6 +164,7 @@ ignored = [ "manifest.toml",
             "src/filters/rename-POS_before_Der-tags.regex",
             "src/fst/affixes/adjectives.lexc",
             "src/fst/affixes/nouns.lexc",
+            "src/fst/affixes/prefixes.lexc",
             "src/fst/affixes/propernouns.lexc",
             "src/fst/affixes/symbols.lexc",
             "src/fst/affixes/verbs.lexc",
@@ -172,7 +173,6 @@ ignored = [ "manifest.toml",
             "src/fst/stems/adjectives.lexc",
             "src/fst/stems/nouns.lexc",
             "src/fst/stems/numerals.lexc",
-            "src/fst/stems/prefixes.lexc",
             "src/fst/stems/pronouns.lexc",
             "src/fst/stems/verbs.lexc",
             "src/hyphenation/hyphenation.xfscript",
