@@ -6,7 +6,7 @@
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__",
             "__LICENSE__", "__REPO__", "__GLOTTOLOG_ID__"]
-rev_id = 219
+rev_id = 220
 required = [".gitattributes",
             ".gitignore",
             ".github/workflows/docsygen.yml",
@@ -16,9 +16,13 @@ required = [".gitattributes",
             "autogen.sh",
             "configure.ac",
             "devtools/check_analysis_regressions.sh.in",
+            "devtools/generate-adj-lemmas.sh",
             "devtools/generate-adj-wordforms.sh",
+            "devtools/generate-noun-lemmas.sh",
             "devtools/generate-noun-wordforms.sh",
+            "devtools/generate-prop-lemmas.sh",
             "devtools/generate-prop-wordforms.sh",
+            "devtools/generate-verb-lemmas.sh",
             "devtools/generate-verb-wordforms.sh",
             "devtools/test_grammar_checker.sh.in",
             "devtools/test_ospell-office_suggestions.sh.in",
