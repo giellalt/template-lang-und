@@ -6,7 +6,7 @@
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__",
             "__LICENSE__", "__REPO__", "__GLOTTOLOG_ID__"]
-rev_id = 229
+rev_id = 230
 required = [".gitattributes",
             ".gitignore",
             ".github/workflows/docsygen.yml",
