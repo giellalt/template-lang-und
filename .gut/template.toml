@@ -6,7 +6,7 @@
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__",
             "__LICENSE__", "__REPO__", "__GLOTTOLOG_ID__"]
-rev_id = 231
+rev_id = 232
 required = [".gitattributes",
             ".gitignore",
             ".github/workflows/docsygen.yml",
@@ -32,6 +32,7 @@ required = [".gitattributes",
             "docs/_includes/toc.html",
             "docs/_layouts/default.html",
             "docs/assets/css/style.scss",
+            "docs/assets/js/theme-toggle.js",
             "giella-__UND__.pc.in",
             "m4/ax_check_gnu_make.m4",
             "m4/ax_compare_version.m4",
