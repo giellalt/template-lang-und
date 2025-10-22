@@ -9,6 +9,9 @@ rev_id = 1
 template_sha = "cc09eb0168024b3d0fee9e69e98b78d579f96ce9"
 
 [replacements]
+__REPO__ = "__REPO__"
 __UND__ = "__UND__"
 __UND2C__ = "__UND2C__"
 __UNDEFINED__ = "__UNDEFINED__"
+__LICENSE__ = "__LICENSE__"
+__GLOTTOLOG_ID__ = "__GLOTTOLOG_ID__"
