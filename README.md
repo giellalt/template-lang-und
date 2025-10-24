@@ -16,6 +16,25 @@ Download nightly / CI/CD installation packages for testing (contains the core zh
 
 __NB!!__ Note that the nightly / CI/CD installation packages are not tested for language quality, and might contain regressions and errors.
 
+<!-- This is copy-pasted from docs/language-map.md
+     uncomment if it works looks ok
+```geojson
+{
+  "type": "Feature",
+  "properties": {
+    "name": "__UNDEFINED__",
+    "radius": 200,
+    "marker-color": "#ff4444",
+    "marker-size": "large"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates: [0, 0]
+  }
+}
+```
+-->
+
 This repository contains finite state source files for the __UNDEFINED__ language
 (ISO 639-3: __UND__, glottolog: __GLOTTOLOG_ID__),
 for building morphological analysers, proofing tools
