@@ -6,7 +6,7 @@
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__",
             "__LICENSE__", "__REPO__", "__GLOTTOLOG_ID__"]
-rev_id = 253
+rev_id = 254
 required = [".gitattributes",
             ".gitignore",
             ".github/workflows/docsygen.yml",
@@ -93,7 +93,6 @@ required = [".gitattributes",
             "tools/grammarcheckers/errors-en.ftl",
             "tools/grammarcheckers/errors-__UND2C__.ftl",
             "tools/grammarcheckers/filters/Makefile.am",
-            "tools/grammarcheckers/pipeline.ts",
             "tools/grammarcheckers/tests/Makefile.am",
             "tools/hyphenators/Makefile.am",
             "tools/hyphenators/Makefile.modification-fst.am",
@@ -153,8 +152,10 @@ optional = [".build-config.yml",
             "manifest.toml.in",
             "src/fst/generated_files/00README.txt",
             "src/fst/incoming/00README.txt",
+            "src/fst/transcriptions/transcriptor-symbols2text.lexc",
             "tools/analysers/pipespec.xml.in",
             "tools/grammarcheckers/index.xml",
+            "tools/grammarcheckers/pipeline.ts",
             "tools/grammarcheckers/pipespec.xml.in",
             "tools/mt/apertium/tagsets/README.txt",
             "tools/spellcheckers/index.mobile.xml.in",
@@ -163,7 +164,10 @@ optional = [".build-config.yml",
             "tools/tokenisers/tokeniser-disamb-gt-desc.pmscript",
             "tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript",
             "tools/tokenisers/tokeniser-tts-cggt-desc.pmscript",
-            "tools/tts/pipespec.xml.in"]
+            "tools/tts/acro2text.regex",
+            "tools/tts/pipeline.ts",
+            "tools/tts/pipespec.xml.in",
+            "tools/tts/text2phontext.regex"]
 
 ignored = [ "manifest.toml",
             "misc/00Readme.txt",
