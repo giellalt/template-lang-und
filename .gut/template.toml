@@ -142,7 +142,6 @@ required = [".gitattributes",
             "tools/tts/test/regresstest.sh.in"]
 
 optional = [".build-config.yml",
-            ".taskcluster.yml",
             "AUTHORS",
             "CITATION.cff",
             "INSTALL",
