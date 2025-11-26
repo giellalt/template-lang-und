@@ -27,3 +27,7 @@ version = "@GRAMCHECKVERSION@"
 [package.tts-textproc]
 name = "@GLANGUAGE@"
 version = "@TTSTEXTPROCVERSION@"
+
+[package.hyphenator]
+name = "@GLANGUAGE@"
+version = "@HYPHVERSION@"

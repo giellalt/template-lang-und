@@ -27,3 +27,7 @@ version = "0.1.0"
 [package.tts-textproc]
 name = "__UNDEFINED__"
 version = "0.1.0"
+
+[package.hyphenator]
+name = "__UNDEFINED__"
+version = "0.1.0"
