@@ -24,6 +24,6 @@ version = "0.1.0"
 name = "__UNDEFINED__"
 version = "0.1.0"
 
-[package.tts-text-proc]
+[package.tts-textproc]
 name = "__UNDEFINED__"
 version = "0.1.0"
