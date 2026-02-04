@@ -10,11 +10,10 @@
   <pipeline name="@GLANG@-normaliser"
             language="@GLANG2@"
             type="Analyser">
-    <tokenize><tokenizer n="tokeniser-disamb-gt-desc.pmhfst"/></tokenize>
+    <tokenize><tokenizer n="tokeniser-tts-cggt-desc.pmhfst"/></tokenize>
     <blanktag>
       <blanktagger n="analyser-gt-whitespace.hfst"/>
     </blanktag>
-    <!--cg><grammar n="valency.bin"/></cg-->
     <cg><grammar n="mwe-dis.bin"/></cg>
     <mwesplit/>
     <cg><grammar n="disambiguator.bin"/></cg>
@@ -22,7 +21,7 @@
     <cg><grammar n="dependency.bin"/></cg>
     <normalise>
       <analyser n="analyser-gt-norm.hfstol"/>
-      <generator n="generator-gt-norm.hfstol"/>
+      <generator n="generator-tts-gt-norm.hfstol"/>
       <normaliser s="ABBR"   n="transcriptor-abbrevs2text.filtered.lookup.hfstol"/>
       <normaliser s="Arab"   n="transcriptor-numbers-digit2text.filtered.lookup.hfstol"/>
       <normaliser s="Roman"  n="transcriptor-numbers-digit2text.filtered.lookup.hfstol"/>
@@ -31,9 +30,20 @@
       <normaliser s="Sem/Year" n="transcriptor-date-digit2text.filtered.lookup.hfstol"/>
       <normaliser s="Sem/Time-clock" n="transcriptor-clock-digit2text.filtered.lookup.hfstol"/>
     </normalise>
-    <!-- Add expansion of abbr expressions, digits etc -->
-    <!-- Add conversion to IPA as the last step:
-     multilingual based on language tags in the analysis -->
+  </pipeline>
+
+  <pipeline name="@GLANG@-analyser"
+            language="@GLANG2@"
+            type="Analyser">
+    <tokenize><tokenizer n="tokeniser-tts-cggt-desc.pmhfst"/></tokenize>
+    <blanktag>
+      <blanktagger n="analyser-gt-whitespace.hfst"/>
+    </blanktag>
+    <cg><grammar n="mwe-dis.bin"/></cg>
+    <mwesplit/>
+    <cg><grammar n="disambiguator.bin"/></cg>
+    <cg><grammar n="functions.bin"/></cg>
+    <cg><grammar n="dependency.bin"/></cg>
   </pipeline>
 
 </pipespec>
