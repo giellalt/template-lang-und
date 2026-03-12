@@ -6,7 +6,7 @@
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__",
             "__LICENSE__", "__REPO__", "__GLOTTOLOG_ID__"]
-rev_id = 283
+rev_id = 284
 required = [".gitattributes",
             ".gitignore",
             ".github/workflows/docsygen.yml",
@@ -34,6 +34,7 @@ required = [".gitattributes",
             "docs/_layouts/default.html",
             "docs/assets/css/style.scss",
             "docs/assets/js/theme-toggle.js",
+            "docs/favicon.png",
             "docs/speller-report.html",
             "docs/typosreport/bundle.css",
             "docs/typosreport/bundle.js",
