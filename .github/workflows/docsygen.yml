@@ -51,7 +51,7 @@ jobs:
           ABSOLUTE_IMAGE_LINKS:
           OUTPUT_FILE_TYPE: "svg"
 
-      - name: list generated svg fils
+      - name: list generated svg files
         run: |
           cd lang && ls -l docs/mermaid-svgs
       # Mermaid processing ends here
