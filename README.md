@@ -1,8 +1,8 @@
 The __UNDEFINED__ morphology and tools
 ==========================================
 
-[![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2F__REPO__%2Fgh-pages%2Fmaturity.json)](https://giellalt.github.io/MaturityClassification.html)
-![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2F__REPO__%2Fgh-pages%2Flemmacount.json)
+[![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2F__REPO__%2Fgh-pages%2Fbadgedata%2Ffst-maturity.json)](https://giellalt.github.io/MaturityClassification.html)
+![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2F__REPO__%2Fgh-pages%2Fbadgedata%2Ffst-lemmacount.json)
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/__REPO__)](https://github.com/giellalt/__REPO__/issues)
 [![License](https://img.shields.io/github/license/giellalt/__REPO__)](https://github.com/giellalt/__REPO__/blob/main/LICENSE)
 [![Doc Build Status](https://github.com/giellalt/__REPO__/workflows/Docs/badge.svg)](https://github.com/giellalt/__REPO__/actions)
