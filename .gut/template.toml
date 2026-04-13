@@ -6,7 +6,7 @@
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__",
             "__LICENSE__", "__REPO__", "__GLOTTOLOG_ID__"]
-rev_id = 298
+rev_id = 299
 required = [".gitattributes",
             ".gitignore",
             ".github/workflows/docsygen.yml",
@@ -126,6 +126,7 @@ required = [".gitattributes",
             "tools/spellcheckers/filters/Makefile.mod-desktop-filters.am",
             "tools/spellcheckers/filters/Makefile.mod-fstbased-filters.am",
             "tools/spellcheckers/filters/Makefile.mod-mobile-filters.am",
+            "tools/spellcheckers/neural/Makefile.am",
             "tools/spellcheckers/test/Makefile.am",
             "tools/spellcheckers/test/accept-all-lemmas.sh.in",
             "tools/spellcheckers/test/neural/Makefile.am",
