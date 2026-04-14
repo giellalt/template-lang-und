@@ -6,10 +6,10 @@
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__",
             "__LICENSE__", "__REPO__", "__GLOTTOLOG_ID__"]
-rev_id = 302
+rev_id = 303
 required = [".gitattributes",
             ".gitignore",
-            ".github/workflows/docsygen.yml",
+            ".github/workflows/docs.yml",
             ".github/workflows/zulip.yml",
             ".glottologid.txt",
             "Makefile.am",
