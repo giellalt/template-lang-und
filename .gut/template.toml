@@ -6,7 +6,7 @@
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__",
             "__LICENSE__", "__REPO__", "__GLOTTOLOG_ID__"]
-rev_id = 309
+rev_id = 310
 required = [".gitattributes",
             ".gitignore",
             ".github/workflows/docs.yml",
@@ -29,12 +29,6 @@ required = [".gitattributes",
             "devtools/test_voikkospell_suggestions.sh.in",
             "docs/Makefile.am",
             "docs/_config.yml",
-            "docs/_includes/sitemap.html",
-            "docs/_includes/toc.html",
-            "docs/_layouts/default.html",
-            "docs/assets/css/style.scss",
-            "docs/assets/js/theme-toggle.js",
-            "docs/favicon.png",
             "docs/speller-report.html",
             "docs/typosreport/bundle.css",
             "docs/typosreport/bundle.js",
