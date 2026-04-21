@@ -6,7 +6,7 @@
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__",
             "__LICENSE__", "__REPO__", "__GLOTTOLOG_ID__"]
-rev_id = 310
+rev_id = 311
 required = [".gitattributes",
             ".gitignore",
             ".github/workflows/docs.yml",
@@ -129,6 +129,7 @@ required = [".gitattributes",
             "tools/spellcheckers/test/suggestion-quality.sh.in",
             "tools/spellcheckers/test/test-zhfst-basic-sugg-speed.sh.in",
             "tools/spellcheckers/test/test-zhfst-file.sh.in",
+            "tools/spellcheckers/weights/config.json",
             "tools/spellcheckers/weights/Makefile.am",
             "tools/tokenisers/Makefile.am",
             "tools/tokenisers/filters/Makefile.am",
