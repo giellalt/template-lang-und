@@ -18,125 +18,363 @@
 !! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF __UNDEFINED__ LANGUAGE.
  
 
-Multichar_Symbols  !!≈ # Definitions for @CODE@
+Alphabets  !!≈ # Definitions for @CODE@
 
-!! ## Analysis symbols
-!  ----------------
+!! ## Alphabets
+!! The alphabet used to writing surface word-forms in __UNDEFINED__ language
+!! are:
+
+a b c d e f g h i j k l m n o p q r s t u v w x y z !!≈ @CODE@
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z !!≈ @CODE@
+á ỹ ŋ́                                               !!≈ @CODE@
+!! These punctuations are always escaped in lexc files:
+%  %# %: %; %! %< %> %% %"  !!≈ @CODE@
+!! These are other common punctuation in __UNDEFINED__ language
+- , . | ? … ¿ ¶ ❡ ¬ • ● · · ‒ – — ― − _ = ≈ & ' * + !!≈ @CODE@
+± ` ´ / \ ~ ‐ ° ( ) [ ] { } « » ‹ › “ ” „ ‟ ‘ ’ ‚ ‛ !!≈ @CODE@
+❛ ❜ ❝ ❞ ❟ ❠ ❮ ❯ 〝 〞 〟 § € £ ¥ ® © √ ◊ ♦ ☐ ⚬ № ‰ ¢ !!≈ @CODE@
+¦ ª × ‡ ™ → ■ □ ▲ ► ▼ ★ ☆ ☺ ✓ ❖ !!≈ @CODE@
+😄 🙂 !!≈ @CODE@
+ ּ  !!≈ @CODE@
+＂ !!≈ @CODE@
+
+!! ## Lexical analysis symbols
 !! The morphological analyses of wordforms for the __UNDEFINED__
 !! language are presented in this system in terms of the following symbols.
-!! (It is highly suggested to follow existing standards when adding new tags).
+!! 
+! (NOTE:
+! The tags in this template are based on an average Uralic language, you can
+! add and remove as needed but check other languages if there are existing
+! "standards")
 
-!! The parts-of-speech are:
- +N +A +Adv +V                                 !!≈
- +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
+!! ### Tags for parts-of-speech (POS)
 
-!! The parts of speech are further split up into:
- +Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef
++N       !!≈ * **@CODE@** Noun
++A       !!≈ * **@CODE@** Adjective
++Adv     !!≈ * **@CODE@** Adverb
++V       !!≈ * **@CODE@** Verb
++Pron    !!≈ * **@CODE@** Pronoun
++CS      !!≈ * **@CODE@** Subjunction
++CC      !!≈ * **@CODE@** Conjunction
++Adp     !!≈ * **@CODE@** Adposition
++Po      !!≈ * **@CODE@** Postpostion
++Pr      !!≈ * **@CODE@** Preposition
++Interj  !!≈ * **@CODE@** Interjection
++Pcle    !!≈ * **@CODE@** Particle
++Num     !!≈ * **@CODE@** Numeral
 
-!! The Usage extents are marked using following tags:
- +Err/Orth   
- +Use/-Spell 
- +Use/TTS          !!≈ * **@CODE@** – **only** retained in the HFST Text-To-Speech disambiguation tokeniser
- +Use/-TTS         !!≈ * **@CODE@** – **never** retained in the HFST Text-To-Speech disambiguation tokeniser
+!! ### Tags for subcategories of POSes
++Prop      !!≈ * **@CODE@** Propernoun
++Pers      !!≈ * **@CODE@** Personal Pronoun
++Dem       !!≈ * **@CODE@** Demonstrative Pronoun
++Interr    !!≈ * **@CODE@** Interrogative Pronoun
++Refl      !!≈ * **@CODE@** Reflexive Pronoun
++Recipr    !!≈ * **@CODE@** Reciprocal Pronoun
++Rel       !!≈ * **@CODE@** Relative Pronoun
++Indef     !!≈ * **@CODE@** Indefinitive Pronoun
++Coll      !!≈ * **@CODE@** Collective numerals, subtag for +N
++Arab      !!≈ * **@CODE@** Arabic numeral, subtag for +Num
++Rom       !!≈ * **@CODE@** Roman numeral, subtag for +Num
++Card      !!≈ * **@CODE@** Cardinal Number
++Ord       !!≈ * **@CODE@** Ordinal Number
++ABBR      !!≈ * **@CODE@** Abbreviation, subtag for e.g. +N
++Symbol    !!≈ * **@CODE@** independent symbols, like £, €, ©
++ACR       !!≈ * **@CODE@** Acronym, subtag for +N
++CLB       !!≈ * **@CODE@** Clause border (full stop, comma..)
++PUNCT     !!≈ * **@CODE@** punctuation
++LEFT      !!≈ * **@CODE@** left punctuation 
++RIGHT     !!≈ * **@CODE@** right punctuation
++MIDDLE    !!≈ * **@CODE@** in-word punctuation, typically hyphen
++TV        !!≈ * **@CODE@**    Transitive Verb, +V+TV
++IV        !!≈ * **@CODE@** Intransitive Verb, +V+IV
 
-!! The nominals are inflected in the following Case and Number
- +Sg +Du +Pl
- +Ess +Nom +Gen +Acc +Ill +Loc +Com 
+!! ### Tags distinguishing different versions of the same lemma (before POS)
++v1   !!≈ * @CODE@
++v2   !!≈ * @CODE@
++v3   !!≈ * @CODE@
 
-!! The possession is marked as such:
- +PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3
-!! The comparative forms are:
- +Comp +Superl
-!! Numerals are classified under:
- +Attr +Card
- +Ord 
-!! Verb moods are:
- +Ind +Prs +Prt +Pot +Cond +Imprt
-!! Verb personal forms are:
- +Sg1 +Sg2 +Sg3 +Du1 +Du2 +Du3 +Pl1 +Pl2 +Pl3
-!! Other verb forms are
- +Inf +Ger +ConNeg +ConNegII +Neg +ImprtII +PrsPrc +PrfPrc +Sup +VGen +VAbess
-
-! Abbreviated words are classified with:
- +ABBR +ACR 
-+Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
-!! Special symbols are classified with:
-+CLB +PUNCT +LEFT +RIGHT +MIDDLE
-!! The verbs are syntactically split according to transitivity:
- +TV +IV
-!! Special multiword units are analysed with:
- +Multi
-!! Non-dictionary words can be recognised with:
- +Guess
-
-!! Question and Focus particles:
- +Qst +Foc
-
-
-!! Semantics are classified with
- +Mal 
- +Fem 
- +Sur 
- +Plc 
- +Org
- +Obj
- +Ani
- +Hum
- +Plant
- +Group
- +Time 
- +Txt
- +Route
- +Measr 
- +Wthr
- +Build 
- +Edu
- +Veh
- +Clth
+!! ## Inflectional analysis symbols
 
 
+!! ### Tags for Case and Number Inflection
++Sg   !!≈ * **@CODE@** Singular
++Du   !!≈ * **@CODE@** Dual
++Pl   !!≈ * **@CODE@** Plural
+
++Nom     !!≈ * **@CODE@** Nominative
++Gen     !!≈ * **@CODE@** Genitive
++Acc     !!≈ * **@CODE@** Accusative
++Ill     !!≈ * **@CODE@** Illative
++Loc     !!≈ * **@CODE@** Locative
++Com     !!≈ * **@CODE@** Comitative
++Ess     !!≈ * **@CODE@** Essive
+
+! insert more cases here as needed, check related languages for standards
+
+!! ### Possessive tags
+
++PxSg1   !!≈ * **@CODE@** Singular First Person
++PxSg2   !!≈ * **@CODE@** Singular Second Person
++PxSg3   !!≈ * **@CODE@** Singular Third Person
++PxDu1   !!≈ * **@CODE@** Dual First Person
++PxDu2   !!≈ * **@CODE@** Dual Second Person
++PxDu3   !!≈ * **@CODE@** Dual Third Person
++PxPl1   !!≈ * **@CODE@** Plural First Person
++PxPl2   !!≈ * **@CODE@** Plural Second Person
++PxPl3   !!≈ * **@CODE@** Plural Third Person
+
+!! ### Moods
++Ind      !!≈ * **@CODE@** Indicative
++Pot      !!≈ * **@CODE@** Potential
++Cond     !!≈ * **@CODE@** Conditional
++Imprt    !!≈ * **@CODE@** Imperative
+
+!! ### Tenses
++Prs      !!≈ * **@CODE@** Present Tense
++Prt      !!≈ * **@CODE@** Past Tense, Preterite
+
+!! ### Verb person-number
++Sg1      !!≈ * **@CODE@** Singular First Person
++Sg2      !!≈ * **@CODE@** Singular Second Person
++Sg3      !!≈ * **@CODE@** Singular Third Person
++Du1      !!≈ * **@CODE@** Dual First Person
++Du2      !!≈ * **@CODE@** Dual Second Person
++Du3      !!≈ * **@CODE@** Dual Third Person
++Pl1      !!≈ * **@CODE@** Plural First Person
++Pl2      !!≈ * **@CODE@** Plural Second Person
++Pl3      !!≈ * **@CODE@** Plural Third Person
+
+!! ### Infinite verb forms
++Inf      !!≈ * **@CODE@** Infinitive
++Ger      !!≈ * **@CODE@** Gerund
++ConNeg   !!≈ * **@CODE@** Negation Form
++Neg      !!≈ * **@CODE@** Negation Verb
++PrsPrc   !!≈ * **@CODE@** Present Participle
++PrfPrc   !!≈ * **@CODE@** Perfect Participle
++Sup      !!≈ * **@CODE@** Supine
+
+!! ### Question and Focus particles:
++Qst         !!≈ * **@CODE@** Question Particle
++Subqst      !!≈ * **@CODE@** Embedded Question Particle
++Foc/xyz     !!≈ * **@CODE@** Focus clitic ...
+
+!! ## Can be lexical or inflectional
+
+!! ### Error (non-standard language) tags
+
++Err/Orth         !!≈ * **@CODE@** substandard form
++Err/Lex          !!≈ * **@CODE@** substandard word
++Err/DerSub       !!≈ * **@CODE@** substandard for derivation
++Err/CmpSub       !!≈ * **@CODE@** substandard for compounding
++Err/MissingSpace !!≈ * **@CODE@** missing a space
++Err/MissingHyph  !!≈ * **@CODE@** missing a hyphen
++Err/Hyph         !!≈ * **@CODE@** unnecessary extra hyphen
++Err/SpaceCmp     !!≈ * **@CODE@** extra space in compound
++Err/Spellrelax   !!≈ * **@CODE@** typos under spell relax
++Err/Confused      !!≈ * **@CODE@** confusion pairs
+
+!! ## Usage tags
+
++Use/-Spell       !!≈ * **@CODE@** excluded from speller
++Use/SpellNoSugg  !!≈ * **@CODE@** recognized but not suggested in speller
++Use/Circ         !!≈ * **@CODE@** circular paths
++Use/MT           !!≈ * **@CODE@** Generate for MT only
++Use/NG           !!≈ * **@CODE@** excluded from generators
++Use/PMatch       !!≈ * **@CODE@** included in tokenisers only
++Use/-PMatch      !!≈ * **@CODE@** excluded from tokeisers
++Use/GC           !!≈ * **@CODE@** included in grammar checker only
++Use/-GC          !!≈ * **@CODE@** excluded from grammar checker
++Use/TTS          !!≈ * **@CODE@** included in text-to-speech only
++Use/-TTS         !!≈ * **@CODE@** excluded from text-to-speech
+
+! ### Dialect tags:
+
++Dial/-XYZ  !!≈ * **@CODE@** forms not in use in
++Dial/XYZ  !!≈ * **@CODE@** forms in use in
+
+!! ## Tags for indicating the orthography used
++Orth/Strd !!≈ @CODE@ - Standard orthography
++Orth/IPA  !!≈ @CODE@ - IPA transcription
+
+!! ## Tags for indicating alternative orthographies, cf `configure.ac`
++AltOrth/standard  !!≈ @CODE@ - Standard orthography
++AltOrth/-standard !!≈ @CODE@ - NOT Standard orthography
+
+!! ## Semantic tags to help disambiguation & synt. analysis: (before POS)
+
++Sem/Act         !!≈ * @CODE@ = Activity
++Sem/Adr         !!≈ * @CODE@ = Address
++Sem/Amount      !!≈ * @CODE@ = Amount
++Sem/Ani         !!≈ * @CODE@ = Animate
++Sem/Aniprod     !!≈ * @CODE@ = Animal Product
++Sem/Body        !!≈ * @CODE@ = Bodypart
++Sem/Build       !!≈ * @CODE@ = Building
++Sem/Build-room  !!≈ * @CODE@ = Room in a building, typically place to be
++Sem/Buildpart   !!≈ * @CODE@ = Part of Bulding, like the wall
++Sem/Cat         !!≈ * @CODE@ = Category
++Sem/Clth        !!≈ * @CODE@ = Clothes
++Sem/Clth-jewl   !!≈ * @CODE@ = Jewelery
++Sem/Clthpart    !!≈ * @CODE@ = part of clothes
++Sem/Ctain       !!≈ * @CODE@ = Container
++Sem/Ctain-abstr !!≈ * @CODE@ = Abstract container like bank account
++Sem/Ctain-clth  !!≈ * @CODE@ = Soft container, like a rucksack
++Sem/Curr        !!≈ * @CODE@ = Currency like dollar, Not Money
++Sem/Date        !!≈ * @CODE@ = Date
++Sem/Dance       !!≈ * @CODE@ = Dance
++Sem/Dir         !!≈ * @CODE@ = Direction
++Sem/Domain      !!≈ * @CODE@ = Domain like politics, reindeerherding
++Sem/Drink       !!≈ * @CODE@ = Drink
++Sem/Dummytag    !!≈ * @CODE@ = Dummytag
++Sem/Edu         !!≈ * @CODE@ = Educational event
++Sem/Event       !!≈ * @CODE@ = Event
++Sem/Feat        !!≈ * @CODE@ = Feature
++Sem/Feat-phys   !!≈ * @CODE@ = Physiological feature
++Sem/Feat-psych  !!≈ * @CODE@ = Psychological feature
++Sem/Feat-measr  !!≈ * @CODE@ = Psychological feature
++Sem/Fem         !!≈ * @CODE@ = Female name
++Sem/Food        !!≈ * @CODE@ = Food
++Sem/Food-med    !!≈ * @CODE@ = Medicine
++Sem/Fruit       !!≈ * @CODE@ = Fruits, vegetables, seeds, nuts
++Sem/Furn        !!≈ * @CODE@ = Furniture
++Sem/Game        !!≈ * @CODE@ = Game
++Sem/Geom        !!≈ * @CODE@ = Geometrical object
++Sem/Group       !!≈ * @CODE@ = Animal or Human Group
++Sem/Hum         !!≈ * @CODE@ = Human
++Sem/Hum-abstr   !!≈ * @CODE@ = Human abstract
++Sem/Hum-prof    !!≈ * @CODE@ = Human professional
++Sem/Ideol       !!≈ * @CODE@ = Ideology
++Sem/ID          !!≈ * @CODE@ = ID
++Sem/Lang        !!≈ * @CODE@ = Language
++Sem/Mal         !!≈ * @CODE@ = Male name
++Sem/Mat         !!≈ * @CODE@ = Material for producing things
++Sem/Measr       !!≈ * @CODE@ = Measure
++Sem/Money       !!≈ * @CODE@ = Has to do with money, like wages, not Curr(ency)
++Sem/Obj         !!≈ * @CODE@ = Object
++Sem/Obj-clo     !!≈ * @CODE@ = Cloth
++Sem/Obj-cogn    !!≈ * @CODE@ = Cloth
++Sem/Obj-el      !!≈ * @CODE@ = (Electrical) machine or apparatus
++Sem/Obj-ling    !!≈ * @CODE@ = Object with something written on it
++Sem/Obj-rope    !!≈ * @CODE@ = flexible ropelike object
++Sem/Obj-surfc   !!≈ * @CODE@ = Surface object
++Sem/Org         !!≈ * @CODE@ = Organisation
++Sem/Part        !!≈ * @CODE@ = Feature
++Sem/Perc-cogn   !!≈ * @CODE@ = Cognitive perception
++Sem/Perc-emo    !!≈ * @CODE@ = Emotional perception
++Sem/Perc-phys   !!≈ * @CODE@ = Physical perception
++Sem/Perc-psych  !!≈ * @CODE@ = Psychological perception
++Sem/Phonenr     !!≈ * @CODE@ = Telephone number
++Sem/Plant       !!≈ * @CODE@ = Plant
++Sem/Plantpart   !!≈ * @CODE@ = Plant part
++Sem/Plc         !!≈ * @CODE@ = Place
++Sem/Plc-abstr   !!≈ * @CODE@ = Abstract place
++Sem/Plc-elevate !!≈ * @CODE@ = Place
++Sem/Plc-line    !!≈ * @CODE@ = Place
++Sem/Plc-water   !!≈ * @CODE@ = Place
++Sem/Pos         !!≈ * @CODE@ = Position (as in social position job)
++Sem/Process     !!≈ * @CODE@ = Process
++Sem/Prod        !!≈ * @CODE@ = Product
++Sem/Prod-audio  !!≈ * @CODE@ = Audio product
++Sem/Prod-cogn   !!≈ * @CODE@ = Cognition product
++Sem/Prod-ling   !!≈ * @CODE@ = Linguistic product
++Sem/Prod-vis    !!≈ * @CODE@ = Visual product
++Sem/Rel         !!≈ * @CODE@ = Relation
++Sem/Route       !!≈ * @CODE@ = Route
++Sem/Rule        !!≈ * @CODE@ = Rule or convention
++Sem/Semcon      !!≈ * @CODE@ = Semantic concept
++Sem/Sign        !!≈ * @CODE@ = Sign (e.g. numbers, punctuation)
++Sem/Sport       !!≈ * @CODE@ = Sport
++Sem/State       !!≈ * @CODE@ = State
++Sem/State-sick  !!≈ * @CODE@ = Illness
++Sem/Substnc     !!≈ * @CODE@ = Substance, like Air and Water
++Sem/Sur         !!≈ * @CODE@ = Surname
++Sem/Symbol      !!≈ * @CODE@ = Symbol
++Sem/Time        !!≈ * @CODE@ = Time
++Sem/Time-clock  !!≈ * @CODE@ = Time clock
++Sem/Tool        !!≈ * @CODE@ = Prototypical tool for repairing things
++Sem/Tool-catch  !!≈ * @CODE@ = Tool used for catching (e.g. fish)
++Sem/Tool-clean  !!≈ * @CODE@ = Tool used for cleaning
++Sem/Tool-it     !!≈ * @CODE@ = Tool used in IT
++Sem/Tool-measr  !!≈ * @CODE@ = Tool used for measuring
++Sem/Tool-music  !!≈ * @CODE@ = Music instrument
++Sem/Tool-write  !!≈ * @CODE@ = Writing tool
++Sem/Txt         !!≈ * @CODE@ = Text
++Sem/Veh         !!≈ * @CODE@ = Vehicle
++Sem/Wpn         !!≈ * @CODE@ = Weapon
++Sem/Wthr        !!≈ * @CODE@ = The Weather or the state of ground
++Sem/Year        !!≈ * @CODE@ - year (i.e. 1000 - 2999), used only for numerals
+
+!! ## Tags for derivation
 !! Derivations are classified under the morphophonetic form of the suffix, the
 !! source and target part-of-speech.
- +V→N +V→V +V→A
- +Der/xxx
 
 
-!! Morphophonology
++Der          !!≈ * **@CODE@** = Generic derivation tag
++Der/xyz      !!≈ * **@CODE@** = Derivation with suffix xyz
++Der/A        !!≈ * **@CODE@** = Adjective derivated from Noun or Verb
++Der/Adv      !!≈ * **@CODE@** = Adverb derivated from Adjective
+
+
+!! ## Morphophonology
 !  ---------------
 !! To represent phonologic variations in word forms we use the following
 !! symbols in the lexicon files:
- {aä} {oö} {uü}
+{aä} !!≈ * **@CODE@** = surface a or ä
+{oö} !!≈ * **@CODE@** = surface o or ö
+{uü} !!≈ * **@CODE@** = surface u or ü
 
-!! And following triggers to control variation
- {front} {back}
+
+!! And following triggers to control variation:
+{front} !!≈ * **@CODE@** = trigger front vowels
+{back} !!≈ * **@CODE@** = trigger back vowels
+
+!! used to control hyphenation
+∑ !!≈ * **@CODE@** = trigger for hyphen that does not work like hyphenation
 
 !! ## Flag diacritics
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
 !! with verbs if the verb is further derived into a noun again:
- @P.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
- @D.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
- @C.NeedNoun@       !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
+!!
+!! | Flag | Explanation
+!! | ---- | -----------
+@P.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
+@D.NeedNoun.ON@    !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
+@C.NeedNoun@       !!≈ |  @CODE@ | (Dis)allow compounds with verbs unless nominalised
+
+!! Following flags are used to control tokenisation and analyses in certain
+!! corner cases (e.g. a full stop at the end of the sentence is also needed for
+!! a full stop of an abbreviation).
+
+!! | Flag | Explanation
+!! | ---- | -----------
+@P.Pmatch.Loc@       !!≈ |  @CODE@ | split point for multitoken word
+@P.Pmatch.Backtrack@ !!≈ |  @CODE@ | merge point for mutltiword token
 !! 
 !! For languages that allow compounding, the following flag diacritics are needed
 !! to control position-based compounding restrictions for nominals. Their use is
 !! handled automatically if combined with +CmpN/xxx tags. If not used, they will
 !! do no harm.
- @P.CmpFrst.FALSE@ !!≈ |  @CODE@ | Require that words tagged as such only appear first
- @D.CmpPref.TRUE@  !!≈ |  @CODE@ | Block such words from entering ENDLEX
- @P.CmpPref.FALSE@ !!≈ |  @CODE@ | Block these words from making further compounds
- @D.CmpLast.TRUE@  !!≈ |  @CODE@ | Block such words from entering R
- @D.CmpNone.TRUE@  !!≈ |  @CODE@ | Combines with the next tag to prohibit compounding
- @U.CmpNone.FALSE@ !!≈ |  @CODE@ | Combines with the prev tag to prohibit compounding
- @P.CmpOnly.TRUE@  !!≈ |  @CODE@ | Sets a flag to indicate that the word has passed R
- @D.CmpOnly.FALSE@ !!≈ |  @CODE@ | Disallow words coming directly from root.
+!!
+!! | Flag | Explanation
+!! | ---- | -----------
+@P.CmpFrst.FALSE@ !!≈ |  @CODE@ | Require that words tagged as such only appear first
+@D.CmpPref.TRUE@  !!≈ |  @CODE@ | Block such words from entering ENDLEX
+@P.CmpPref.FALSE@ !!≈ |  @CODE@ | Block these words from making further compounds
+@D.CmpLast.TRUE@  !!≈ |  @CODE@ | Block such words from entering R
+@D.CmpNone.TRUE@  !!≈ |  @CODE@ | Combines with the next tag to prohibit compounding
+@U.CmpNone.FALSE@ !!≈ |  @CODE@ | Combines with the prev tag to prohibit compounding
+@P.CmpOnly.TRUE@  !!≈ |  @CODE@ | Sets a flag to indicate that the word has passed R
+@D.CmpOnly.FALSE@ !!≈ |  @CODE@ | Disallow words coming directly from root.
 !! 
 !! Use the following flag diacritics to control downcasing of derived proper
 !! nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 !! these flags. There exists a ready-made regex that will do the actual down-casing
 !! given the proper use of these flags.
- @U.Cap.Obl@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
- @U.Cap.Opt@        !!≈ |  @CODE@ | Allowing downcasing of derived names: deatnulasj.
+!!
+!! | Flag | Explanation
+!! | ---- | -----------
+@U.Cap.Obl@        !!≈ |  @CODE@ | Allowing downcasing of derived names
+@U.Cap.Opt@        !!≈ |  @CODE@ | Allowing downcasing of derived names
 
 LEXICON Root
 !! The word forms in __UNDEFINED__ language start from the lexeme roots of basic
@@ -147,7 +385,8 @@ LEXICON Root
  Pronouns    ;
  Numerals    ;
  Prefixes    ;
- Punctuation ;
- Symbols     ;
+ Punctuation ;  ! comes from shared-mul, not found under src/...
+ Symbols     ;  ! comes from shared-mul, not found under src/...
+ ProperNouns       ;
 
 ! vim: set ft=xfst-lexc:

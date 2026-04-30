@@ -1,0 +1,7 @@
+!! Propre nouns
+!! Proper  nouns in the __UNDEFINED__ language are names of things.
+
+LEXICON ProperNouns
+Propernoun+N:Propernoun    ProperNounCases   ;
+
+! vim: set ft=xfst-lexc:
