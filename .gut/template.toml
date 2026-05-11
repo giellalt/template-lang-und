@@ -6,7 +6,7 @@
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__",
             "__LICENSE__", "__REPO__", "__GLOTTOLOG_ID__"]
-rev_id = 316
+rev_id = 317
 required = [".gitattributes",
             ".gitignore",
             ".github/workflows/docs.yml",
@@ -53,6 +53,7 @@ required = [".gitattributes",
             "src/fst/morphology/Makefile.am",
             "src/fst/morphology/Makefile.modifications-phon.am",
             "src/fst/morphology/test/Makefile.am",
+            "src/fst/morphology/test/config.json.in",
             "src/fst/morphology/test/generate-adjective-lemmas.sh.in",
             "src/fst/morphology/test/generate-adjective-paradigm.sh.in",
             "src/fst/morphology/test/generate-noun-lemmas.sh.in",
