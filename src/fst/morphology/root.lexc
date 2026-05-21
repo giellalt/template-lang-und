@@ -35,8 +35,11 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z !!≈ @CODE@
 ❛ ❜ ❝ ❞ ❟ ❠ ❮ ❯ 〝 〞 〟 § € £ ¥ ® © √ ◊ ♦ ☐ ⚬ № ‰ ¢ !!≈ @CODE@
 ¦ ª × ‡ ™ → ■ □ ▲ ► ▼ ★ ☆ ☺ ✓ ❖ !!≈ @CODE@
 😄 🙂 !!≈ @CODE@
- ּ  !!≈ @CODE@
 ＂ !!≈ @CODE@
+ּ   !!≈ @CODE@ U+05BC HEBREW POINT DAGESH OR MAPIQ
+­   !!≈ @CODE@ U+00AD SOFT HYPHEN
+   !!≈ @CODE@ U+00A0 NO-BREAK SPACE
+   !!≈ @CODE@ U+202F NARROW NO-BREAK SPACE
 
 !! ## Lexical analysis symbols
 !! The morphological analyses of wordforms for the __UNDEFINED__
