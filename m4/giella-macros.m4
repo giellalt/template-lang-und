@@ -473,7 +473,7 @@ AC_PATH_PROG([CG_RELABEL], [cg-relabel], [no], [$PATH$PATH_SEPARATOR$with_vislcg
 AC_PATH_PROG([CG_MWESPLIT], [cg-mwesplit], [no], [$PATH$PATH_SEPARATOR$with_vislcg3])
 
 AS_IF([test "x$VISLCG3" != xno], [
-_giella_core_vislcg3_min_version=m4_default([$1], [1.0.0])
+_giella_core_vislcg3_min_version=m4_default([$1], [1.4.0])
 AC_MSG_CHECKING([whether vislcg3 is compatible with at least $_giella_core_vislcg3_min_version])
 _vislcg3_version_output=$( ${VISLCG3} --version 2>&1 )
 _vislcg3_version=$( printf '%s\n' "$_vislcg3_version_output" \
