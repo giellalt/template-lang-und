@@ -6,7 +6,7 @@
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__",
             "__LICENSE__", "__REPO__", "__GLOTTOLOG_ID__"]
-rev_id = 323
+rev_id = 324
 required = [".gitattributes",
             ".gitignore",
             ".github/workflows/docs.yml",
@@ -152,6 +152,7 @@ optional = [".build-config.yml",
             "LICENSE",
             "README.md",
             "devtools/00README.txt",
+            "devtools/generate-err-testdata.sh.in",
             "docs/index-header.md",
             "docs/language-map.md",
             "manifest.toml.in",
