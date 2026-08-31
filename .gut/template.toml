@@ -6,7 +6,7 @@
 name = "Language Template"
 patterns = ["__UND__", "__UND2C__", "__UNDEFINED__",
             "__LICENSE__", "__REPO__", "__GLOTTOLOG_ID__"]
-rev_id = 330
+rev_id = 331
 required = [".gitattributes",
             ".gitignore",
             ".github/workflows/docs.yml",
@@ -31,7 +31,6 @@ required = [".gitattributes",
             "docs/Gemfile",
             "docs/Makefile.am",
             "docs/_config.yml",
-            "docs/speller-report.html",
             "docs/testlogs/index.md",
             "docs/typosreport/bundle.css",
             "docs/typosreport/bundle.js",

@@ -48,13 +48,6 @@ Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-__UN
 for the __UNDEFINED__ language by using the [Divvun Installer](http://divvun.no)
 (some languages are only available via the nightly channel).
 
-Spell-checker accuracy:
-
-[![Speller
-Accuracy](https://img.shields.io/badge/Speller_Accuracy-XX_%25-green.svg)](https://giellalt.github.io/__REPO__/speller-report.html)
-[![Spell-checking accuracy development
-graph](https://giellalt.github.io/__REPO__/speller-report.svg)](https://giellalt.github.io/__REPO__/speller-report.svg)
-
 Download and test speller files
 -------------------------------
 
