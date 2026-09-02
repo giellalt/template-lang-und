@@ -1,0 +1,78 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/giellalt/template-lang-und/refs/heads/main/src/fst/morphology/test/config.json.in",
+    "title": "morphology test configuration",
+    "description": "more blah",
+    "type": "object",
+    "properties": {
+        "analyser": {
+            "description": "location of analyser model file",
+            "type": "string"
+        },
+        "generator": {
+            "description": "location of generator model file",
+            "type": "string"
+        },
+        "rootlexc": {
+            "description": "location of root lexc file if any",
+            "type": "string"
+        },
+        "adjectives": {
+            "description": "setup of adjectives lexc if any",
+            "$ref": "#/$defs/lexc_config"
+        },
+        "nouns": {
+            "description": "setup of nouns lexc if any",
+            "$ref": "#/$defs/lexc_config"
+        },
+        "propernouns": {
+            "description": "setup of proper nouns lexc if any",
+            "$ref": "#/$defs/lexc_config"
+        },
+        "verbs": {
+            "description": "setup of verbs lexc if any",
+            "$ref": "#/$defs/lexc_config"
+        },
+        "otherlexcs": {
+            "description": "other uncofigured lexc data",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": ["analyser", "generator"],
+    "$defs": {
+        "lexc_config": {
+            "type": "object",
+            "properties": {
+                "lexcfile": {
+                    "description": "location of lexc file",
+                    "type": "string"
+                },
+                "lemmatags": {
+                    "description": "list of acceptable analyses for lemma form",
+                    "type": "array",
+                    "items": {
+                       "type": "string"
+                    }
+                },
+                "exclusions": {
+                    "description": "regex patterns to exclude lemma lines",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "inclusions": {
+                    "description": "regex patterns to include lemma lines",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": ["lexcfile", "lemmatags"]
+        }
+    }
+}
