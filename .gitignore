@@ -13,6 +13,7 @@
 *.cg3src
 *.foma
 *.hfstol
+*.orig
 *.oxt
 *.pmhfst
 *.py.log
