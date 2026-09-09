@@ -1,8 +1,9 @@
 The __UNDEFINED__ morphology and tools
 ==========================================
 
-[![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2F__REPO__%2Fgenerated%2Fdocs-data%2Ffst-maturity.json)](https://giellalt.github.io/MaturityClassification.html)
-![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2F__REPO__%2Fgenerated%2Fdocs-data%2Ffst-lemmacount.json)
+[![Maturity](https://github.com/giellalt/__REPO__/raw/generated/docs-data/fst-maturity.svg)](https://giellalt.github.io/MaturityClassification.html)
+![Lemma count](https://github.com/giellalt/__REPO__/raw/generated/docs-data/fst-lemmacount.svg)
+[![Speller suggestion quality](https://github.com/giellalt/__REPO__/raw/generated/docs-data/speller-suggestions.svg)](https://giellalt.github.io/__REPO__/typosreport/)
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/__REPO__)](https://github.com/giellalt/__REPO__/issues)
 [![License](https://img.shields.io/github/license/giellalt/__REPO__)](https://github.com/giellalt/__REPO__/blob/main/LICENSE)
 [![Doc build](https://img.shields.io/github/actions/workflow/status/giellalt/__REPO__/docs.yml?logo=github&label=DocCI)](https://github.com/giellalt/__REPO__/actions/workflows/docs.yml)
