@@ -30,7 +30,7 @@ __NB!!__ Note that the nightly / CI/CD installation packages are not tested for 
   },
   "geometry": {
     "type": "Point",
-    "coordinates: [0, 0]
+    "coordinates": [0, 0]
   }
 }
 ```
